@@ -70,7 +70,7 @@ export default function IntelSlides() {
 
           {/* Playbook banner */}
           <AnimatedSection delay={400}>
-            <div className="rounded-xl border overflow-hidden" style={{ borderColor: '#b5f55a', background: 'linear-gradient(135deg, #f3ffe3, #f8fff0)' }}>
+            <div className="rounded-xl border overflow-hidden" style={{ borderColor: '#bfdbfe', background: 'linear-gradient(135deg, #eff6ff, #f8fff0)' }}>
               <div className="p-5 sm:p-6">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                   <div className="flex-1">
@@ -81,7 +81,7 @@ export default function IntelSlides() {
                   <div className="text-right">
                     <p className="text-xs text-carbon-400">Partner Audience Intelligence</p>
                     <p className="font-black text-carbon-900">FBS Malta 2026</p>
-                    <p className="text-xs text-lime-600 font-semibold">Full Consent · GDPR</p>
+                    <p className="text-xs text-blue-600 font-semibold">Full Consent · GDPR</p>
                   </div>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default function IntelSlides() {
               <span>·</span>
               <span>✓ Email + WhatsApp included</span>
               <span>·</span>
-              <span className="inline-flex items-center gap-1 px-2 py-1 rounded bg-lime-50 text-lime-700 border border-lime-200 font-semibold text-xs">
+              <span className="inline-flex items-center gap-1 px-2 py-1 rounded bg-lime-50 text-blue-700 border border-lime-200 font-semibold text-xs">
                 ☑ Consent · GDPR
               </span>
             </div>

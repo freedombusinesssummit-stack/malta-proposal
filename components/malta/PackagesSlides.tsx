@@ -107,7 +107,7 @@ export default function PackagesSlides() {
             <AnimatedList delay={90} className="space-y-3">
               {FLOW.map((f, i) => (
                 <div key={i} className="spotlight-card relative flex items-start gap-4 p-4 rounded-xl transition-all duration-300 hover:-translate-y-1"
-                  style={{ background: f.green ? "#f8fff0" : "white", border: `1px solid ${f.green ? "#b5f55a" : "#e5e7eb"}`, boxShadow: f.green ? "0 2px 16px rgba(158,240,26,0.08)" : "none" }}>
+                  style={{ background: f.green ? "#f8fff0" : "white", border: `1px solid ${f.green ? "#bfdbfe" : "#e5e7eb"}`, boxShadow: f.green ? "0 2px 16px rgba(158,240,26,0.08)" : "none" }}>
                   <div className="w-10 h-10 rounded-full flex items-center justify-center font-black text-sm flex-shrink-0 relative z-10"
                     style={{ background: f.green ? "#9ef01a" : "#f3f4f6", color: f.green ? "#111827" : "#6b7280" }}>
                     {i + 1}
@@ -138,7 +138,7 @@ export default function PackagesSlides() {
           </AnimatedSection>
 
           <AnimatedSection delay={80}>
-            <div className="rounded-xl p-5 mb-8" style={{ background: "#f8fff0", border: "1px solid #b5f55a" }}>
+            <div className="rounded-xl p-5 mb-8" style={{ background: "#f8fff0", border: "1px solid #bfdbfe" }}>
               <p className="text-sm text-carbon-600 mb-1">Speakers & Partners don't invest into "Speaking Slot".</p>
               <p className="font-bold text-carbon-900">
                 You invest to get{" "}
@@ -184,7 +184,7 @@ export default function PackagesSlides() {
 
           {/* CTA block — NO button */}
           <AnimatedSection delay={250}>
-            <div className="rounded-2xl p-8 md:p-10 text-center" style={{ background: "#f8fff0", border: "2px solid #b5f55a" }}>
+            <div className="rounded-2xl p-8 md:p-10 text-center" style={{ background: "#f8fff0", border: "2px solid #bfdbfe" }}>
               <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "#3d8000" }}>Ready to Reach This Audience?</p>
               <h2 className="font-black text-carbon-900 leading-tight mb-3" style={{ fontSize: "clamp(28px, 4vw, 44px)", letterSpacing: "-1px" }}>
                 Speaking &{" "}
@@ -245,7 +245,7 @@ export default function PackagesSlides() {
                 <thead>
                   <tr className="bg-carbon-50 border-b border-carbon-200">
                     <th className="px-4 py-3 text-xs font-bold text-carbon-500 uppercase tracking-wide w-1/2">Feature</th>
-                    <th className="px-4 py-3 text-xs font-bold uppercase tracking-wide text-center w-1/4 border-l border-carbon-200" style={{ background: "#f3ffe3", color: "#3d8000" }}>GROWTH</th>
+                    <th className="px-4 py-3 text-xs font-bold uppercase tracking-wide text-center w-1/4 border-l border-carbon-200" style={{ background: "#eff6ff", color: "#3d8000" }}>GROWTH</th>
                     <th className="px-4 py-3 text-xs font-bold text-carbon-700 uppercase tracking-wide text-center w-1/4 border-l border-carbon-200">STRATEGIC</th>
                   </tr>
                 </thead>
@@ -268,7 +268,7 @@ export default function PackagesSlides() {
               </table>
             </div>
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="relative rounded-xl p-6 overflow-hidden" style={{ background: "#f3ffe3", border: "1px solid #b5f55a" }}>
+              <div className="relative rounded-xl p-6 overflow-hidden" style={{ background: "#eff6ff", border: "1px solid #bfdbfe" }}>
                 <p className="text-xs font-bold text-carbon-400 uppercase tracking-widest mb-2">GROWTH · Early Bird</p>
                 <AnimatedGradientText className="text-4xl font-black tracking-tight">€3,750</AnimatedGradientText>
                 <p className="text-xs text-carbon-400 mt-1 mb-4">Standard (May 20th): <span className="line-through">€4,450</span></p>
@@ -301,7 +301,7 @@ export default function PackagesSlides() {
                 <thead>
                   <tr className="bg-carbon-50 border-b border-carbon-200">
                     <th className="px-4 py-3 text-xs font-bold text-carbon-500 uppercase tracking-wide w-1/2">Feature</th>
-                    <th className="px-4 py-3 text-center w-1/4 border-l border-carbon-200" style={{ background: "#f3ffe3" }}>
+                    <th className="px-4 py-3 text-center w-1/4 border-l border-carbon-200" style={{ background: "#eff6ff" }}>
                       <div className="flex flex-col items-center gap-1">
                         <span className="text-xs font-bold uppercase tracking-wide" style={{ color: "#3d8000" }}>PREMIUM</span>
                         <Badge variant="lime" className="text-xs">✦ Best Choice</Badge>

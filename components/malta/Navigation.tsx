@@ -89,8 +89,8 @@ export default function Navigation() {
             {/* CTA button */}
             <a
               href="mailto:denis@fsummit.net"
-              className="flex items-center justify-center h-9 rounded-lg text-sm font-bold text-carbon-900 transition-all hover:opacity-90 whitespace-nowrap"
-              style={{ background: "#9ef01a", padding: "0 14px" }}
+              className="flex items-center justify-center h-9 rounded-lg text-sm font-bold text-white transition-all hover:opacity-90 whitespace-nowrap"
+              style={{ background: "#e11d48", padding: "0 14px", color: "#fff" }}
             >
               <span className="hidden sm:inline">Partner With Us</span>
               <span className="sm:hidden">Partner</span>

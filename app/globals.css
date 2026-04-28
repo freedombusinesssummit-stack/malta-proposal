@@ -16,13 +16,13 @@
   }
   ::-webkit-scrollbar { width: 3px; }
   ::-webkit-scrollbar-track { background: #f1f5f9; }
-  ::-webkit-scrollbar-thumb { background: #9ef01a; border-radius: 2px; }
+  ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 2px; }
 }
 
 @layer components {
   /* Layout */
   .wrap {
-    max-width: 1000px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
@@ -50,8 +50,8 @@
     padding: 20px;
   }
   .card-green {
-    background: #f3ffe3;
-    border: 1px solid #b5f55a;
+    background: #f0f7ff;
+    border: 1px solid #bfdbfe;
     border-radius: 12px;
     padding: 20px;
   }
@@ -66,8 +66,8 @@
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.02em;
-    background: #111827;
-    color: #9ef01a;
+    background: #1e293b;
+    color: #e2e8f0;
     border: none;
     white-space: nowrap;
   }
@@ -143,8 +143,8 @@
     align-items: center;
     gap: 6px;
     padding: 11px 20px;
-    background: #111827;
-    color: #9ef01a;
+    background: #1e293b;
+    color: #e2e8f0;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 700;
@@ -172,7 +172,7 @@
     cursor: pointer;
     white-space: nowrap;
   }
-  .btn-outline:hover { border-color: #9ef01a; color: #111827; }
+  .btn-outline:hover { border-color: #3b82f6; color: #111827; }
 
   /* Animate in */
   .anim {

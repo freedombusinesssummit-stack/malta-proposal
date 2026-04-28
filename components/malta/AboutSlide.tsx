@@ -13,7 +13,7 @@ const STATS = [
 ];
 
 const FEATURES = [
-  { icon: "🏛️", title: "Government-Backed Credibility", text: "Only summit co-produced with Residency Malta Agency — direct government endorsement for your brand." },
+  { icon: "🏛️", title: "Government-Backed Credibility", text: "Only summit produced in collaboration with Residency Malta Agency — direct government endorsement for your brand." },
   { icon: "📡", title: "Real Intent Signals", text: "Data-driven summit capturing real mobility intent — not vanity traffic. Every attendee is pre-qualified." },
   { icon: "🌍", title: "Global Exposure", text: "100% global distribution and media exposure across EU, UK, MENA, India, and Asia-Pacific markets." },
   { icon: "🔒", title: "Category Exclusivity", text: "Exclusive positioning per category and jurisdiction. No direct competitors on the same stage." },
@@ -39,20 +39,20 @@ export default function AboutSlide() {
         <div className="wrap py-16 md:py-20">
           <AnimatedSection className="anim">
             <p className="section-label">About the Event</p>
-            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 leading-tight mb-4">
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 leading-tight mb-6">
               What is FBS Malta Edition?
             </h2>
-            <p className="text-carbon-600 text-base md:text-lg max-w-2xl mb-4 leading-relaxed">
+            <p className="text-carbon-600 text-base md:text-lg mb-4 leading-relaxed">
               FBS Malta Edition is a two-day in-person summit at the intersection of investment migration,
               EU corporate structuring, and global mobility. Held in Valletta — the EU&apos;s smallest capital
               with outsized strategic significance — convening HNWIs, founders, and service providers around
               Malta&apos;s unique proposition as a gateway jurisdiction.
             </p>
-            <p className="text-carbon-500 text-sm max-w-2xl mb-8 leading-relaxed">
+            <p className="text-carbon-500 text-sm mb-8 leading-relaxed">
               <strong className="text-carbon-800">Day 1</strong> features government entities on stage. {" "}
               <strong className="text-carbon-800">Day 2</strong> features commercial agents — lawyers, tax advisors, iGaming specialists, and Fintech experts.
-              Produced in official partnership with{" "}
-              <strong className="text-lime-600">Residency Malta Agency</strong>.
+              Produced in official collaboration with{" "}
+              <strong className="text-blue-600">Residency Malta Agency</strong>.
             </p>
           </AnimatedSection>
 
@@ -78,10 +78,10 @@ export default function AboutSlide() {
           <AnimatedSection className="anim">
             <p className="section-label">Official Government Partnership</p>
             <h2 className="text-3xl md:text-4xl font-black text-carbon-900 leading-tight mb-4">
-              Produced in Partnership with <span className="text-lime-600">Residency Malta Agency</span>
+              Produced in Collaboration with <span className="text-blue-600">Residency Malta Agency</span>
             </h2>
             <p className="text-carbon-600 text-base max-w-2xl mb-6 leading-relaxed">
-              FBS Malta is the only private summit produced in direct cooperation with Malta&apos;s official Residency Agency.
+              FBS Malta is the only private summit produced in direct collaboration with Malta&apos;s official Residency Agency.
               This gives commercial partners co-branding alongside a government authority — an unmatched trust signal
               for HNWI prospects evaluating Malta&apos;s residency and citizenship programmes.
             </p>

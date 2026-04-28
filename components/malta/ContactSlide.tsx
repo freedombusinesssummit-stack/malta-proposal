@@ -97,7 +97,7 @@ export default function ContactSlide() {
                           el.style.display = "none";
                           const parent = el.parentElement;
                           if (parent) {
-                            parent.style.background = c.lime ? "#f3ffe3" : "#f3f4f6";
+                            parent.style.background = c.lime ? "#eff6ff" : "#f3f4f6";
                             parent.style.display = "flex";
                             parent.style.alignItems = "center";
                             parent.style.justifyContent = "center";
@@ -132,7 +132,7 @@ export default function ContactSlide() {
 
         {/* Website */}
         <AnimatedSection delay={250}>
-          <div className="rounded-xl p-5 flex items-center justify-between" style={{ background: "#f8fff0", border: "1px solid #b5f55a" }}>
+          <div className="rounded-xl p-5 flex items-center justify-between" style={{ background: "#f8fff0", border: "1px solid #bfdbfe" }}>
             <div>
               <p className="text-xs text-carbon-500 font-medium mb-0.5">Website</p>
               <p className="font-bold text-carbon-900">maltaedition.fsummit.net</p>

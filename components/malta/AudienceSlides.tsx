@@ -145,10 +145,10 @@ export default function AudienceSlides() {
           </div>
 
           <AnimatedSection delay={400}>
-            <div className="rounded-xl p-5 border" style={{ background: "linear-gradient(135deg, #f8fff0, #f0fdf4)", borderColor: "#b5f55a" }}>
+            <div className="rounded-xl p-5 border" style={{ background: "linear-gradient(135deg, #f8fff0, #f0fdf4)", borderColor: "#bfdbfe" }}>
               <p className="text-sm font-bold text-carbon-800 mb-1">Key Takeaway</p>
               <p className="text-sm text-carbon-600">
-                Founder-heavy audience — over <strong className="text-lime-600">75% are entrepreneurs or senior executives</strong> with direct authority over investment, residency, and structuring decisions.
+                Founder-heavy audience — over <strong className="text-blue-600">75% are entrepreneurs or senior executives</strong> with direct authority over investment, residency, and structuring decisions.
               </p>
             </div>
           </AnimatedSection>
@@ -186,7 +186,7 @@ export default function AudienceSlides() {
             <div className="mt-6 rounded-xl p-4 border border-lime-200 bg-lime-50">
               <p className="text-sm font-bold text-carbon-800">Takeaway</p>
               <p className="text-sm text-carbon-600 mt-1">
-                Malta-first mindset — <strong className="text-lime-600">72% want residency or citizenship</strong> options.{" "}
+                Malta-first mindset — <strong className="text-blue-600">72% want residency or citizenship</strong> options.{" "}
                 The #1 need is <strong className="text-carbon-800">&ldquo;trusted service providers&rdquo;</strong> in the Malta ecosystem.
               </p>
             </div>

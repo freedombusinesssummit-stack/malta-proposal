@@ -162,7 +162,7 @@ export default function PartnersAndAgenda() {
                       <span className="font-black text-3xl text-carbon-100 flex-shrink-0 leading-none w-10">{s.num}</span>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1">
-                          <p className="text-xs font-bold uppercase tracking-widest text-lime-600">{s.org}</p>
+                          <p className="text-xs font-bold uppercase tracking-widest text-blue-600">{s.org}</p>
                           <span className="text-xs px-2 py-0.5 rounded font-bold bg-red-50 text-red-600 border border-red-200">🏛 GOV</span>
                         </div>
                         <p className="font-black text-carbon-900 text-base leading-snug">{s.title}</p>
@@ -180,8 +180,8 @@ export default function PartnersAndAgenda() {
                       <span className="font-black text-3xl text-carbon-100 flex-shrink-0 leading-none w-10">{s.num}</span>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1">
-                          <p className="text-xs font-bold uppercase tracking-widest text-lime-600">{s.org}</p>
-                          <span className="text-xs px-2 py-0.5 rounded font-bold bg-lime-50 text-lime-700 border border-lime-200">🏢 COMMERCIAL</span>
+                          <p className="text-xs font-bold uppercase tracking-widest text-blue-600">{s.org}</p>
+                          <span className="text-xs px-2 py-0.5 rounded font-bold bg-lime-50 text-blue-700 border border-lime-200">🏢 COMMERCIAL</span>
                         </div>
                         <p className="font-black text-carbon-900 text-base leading-snug">{s.title}</p>
                         <p className="text-sm text-carbon-500 mt-1">{s.desc}</p>

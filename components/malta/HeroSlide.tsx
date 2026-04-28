@@ -68,11 +68,11 @@ export default function HeroSlide() {
 
           <div className="flex flex-col gap-1.5 mb-5" style={fade(200)}>
             {[
-              { bold: "2 days", text: "of curated content — government entities on Day 1, commercial specialists on Day 2" },
-              { bold: "8 sessions", text: "across investment, residency, tax optimization, iGaming &amp; fintech" },
+              { bold: "2 days", text: "of curated content from government agencies and trusted service providers" },
+              { bold: "8 sessions", text: "across investment, residency, tax optimization, iGaming & fintech" },
             ].map((b, i) => (
               <p key={i} className="text-carbon-600 text-sm md:text-base flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: "#9ef01a" }} />
+                <span className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: "#3b82f6" }} />
                 <strong className="text-carbon-900">{b.bold}</strong>&nbsp;<span dangerouslySetInnerHTML={{ __html: b.text }} />
               </p>
             ))}
@@ -83,7 +83,7 @@ export default function HeroSlide() {
             <div className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl border border-lime-200 bg-lime-50">
               <span className="text-lg">🏛️</span>
               <div>
-                <p className="text-xs font-bold text-lime-700 uppercase tracking-wide">Official Government Partnership</p>
+                <p className="text-xs font-bold text-blue-700 uppercase tracking-wide">Official Government Partnership</p>
                 <p className="text-sm font-semibold text-carbon-800">Residency Malta Agency</p>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function HeroSlide() {
           <div className="mb-7" style={fade(360)}><Countdown /></div>
 
           <div className="flex flex-wrap gap-3 mb-8" style={fade(420)}>
-            <ShimmerButton href="mailto:denis@fsummit.net" background="#9ef01a" shimmerColor="rgba(255,255,255,0.5)" shimmerDuration="1.8s" className="text-sm font-bold px-5 py-2.5">
+            <ShimmerButton href="mailto:denis@fsummit.net" background="#e11d48" shimmerColor="rgba(255,255,255,0.4)" shimmerDuration="1.8s" className="text-sm font-bold px-5 py-2.5">
               Partner With Us →
             </ShimmerButton>
             <button onClick={() => document.getElementById("pricing-brand")?.scrollIntoView({ behavior: "smooth" })}
