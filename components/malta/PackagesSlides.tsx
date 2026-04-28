@@ -99,7 +99,7 @@ export default function PackagesSlides() {
         <div className="wrap">
           <AnimatedSection>
             <Badge variant="success" className="mb-3">Engagement Flow</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2" style={{ letterSpacing: "-0.5px" }}>How the Partnership Works</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 mb-2" >How the Partnership Works</h2>
             <p className="text-carbon-500 mb-10">A structured 8–12 week journey — from pre-event exposure to post-event lead delivery</p>
           </AnimatedSection>
           <div className="relative">
@@ -132,7 +132,7 @@ export default function PackagesSlides() {
         <div className="wrap">
           <AnimatedSection>
             <Badge variant="success" className="mb-3">Engagement Options</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2" style={{ letterSpacing: "-0.5px" }}>Speaking & Partnership Engagement</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 mb-2" >Speaking & Partnership Engagement</h2>
             <p className="text-carbon-500 mb-2">For this event we allocated <strong className="text-carbon-900">8–10 partnerships/speaking slots only</strong>.</p>
             <p className="text-carbon-500 mb-8">8–10 slots per event. Every partner gets qualified leads, audience data, and thought leadership positioning.</p>
           </AnimatedSection>
@@ -201,7 +201,7 @@ export default function PackagesSlides() {
             <div className="mt-5 rounded-2xl border border-carbon-200 bg-white p-6 md:p-8">
               <div className="mb-5">
                 <p className="text-xs font-bold uppercase tracking-widest mb-1.5" style={{ color: "#9ef01a" }}>Contact</p>
-                <h3 className="text-2xl font-black text-carbon-900 mb-2" style={{ letterSpacing: "-0.5px" }}>Ready to Partner?</h3>
+                <h3 className="text-2xl font-black text-carbon-900 mb-2" >Ready to Partner?</h3>
                 <p className="text-sm text-carbon-500 mb-5">We only work with <strong className="text-carbon-900">8–10 selected partners per event.</strong> Reach out now to secure your slot before the Early Bird deadline on May 20th.</p>
                 <ShimmerButton href="mailto:denis@fsummit.net" background="#9ef01a" shimmerColor="rgba(255,255,255,0.4)" shimmerDuration="1.8s" className="text-sm font-bold px-6 py-3">
                   Become a Partner →
@@ -236,7 +236,7 @@ export default function PackagesSlides() {
         <div className="wrap">
           <AnimatedSection>
             <Badge variant="success" className="mb-3">Pricing · Brand Integration</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2" style={{ letterSpacing: "-0.5px" }}>Brand Integration Partnership</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 mb-2" >Brand Integration Partnership</h2>
             <p className="text-carbon-500 mb-8">An 8–12 week full summit integration — from pre-event content to summit exposure and post-event data.</p>
           </AnimatedSection>
           <AnimatedSection delay={80}>
@@ -292,7 +292,7 @@ export default function PackagesSlides() {
         <div className="wrap">
           <AnimatedSection>
             <Badge variant="success" className="mb-3">Pricing · Speaking</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2" style={{ letterSpacing: "-0.5px" }}>Speaking & Visibility</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 mb-2" >Speaking & Visibility</h2>
             <p className="text-carbon-500 mb-8">Secure your speaking slot without a full partnership commitment. Limited slots per industry.</p>
           </AnimatedSection>
           <AnimatedSection delay={80}>

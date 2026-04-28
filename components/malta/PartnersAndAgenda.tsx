@@ -52,43 +52,13 @@ export default function PartnersAndAgenda() {
   return (
     <>
       {/* Flow */}
-      <section id="flow" className="slide-section py-14 bg-white border-b border-carbon-100">
-        <span className="slide-number">10 / 18</span>
-        <div className="wrap">
-          <AnimatedSection>
-            <Badge variant="success" className="mb-3">Engagement Flow</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2">How the Partnership Works</h2>
-            <p className="text-carbon-500 mb-8">A structured 8–12 week journey — from pre-event exposure to post-event lead delivery</p>
-          </AnimatedSection>
-
-          <div className="space-y-2">
-            {FLOW_STEPS.map((s, i) => (
-              <AnimatedSection key={i} delay={i * 60}>
-                <div className="flex items-center gap-4 rounded-xl border border-carbon-100 bg-white p-4 hover:border-blue-200 hover:shadow-sm transition-all">
-                  <div className="w-9 h-9 rounded-lg flex items-center justify-center font-black text-sm flex-shrink-0" style={{ background: "#9ef01a", color: "#111827" }}>
-                    {s.n}
-                  </div>
-                  <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-0.5">
-                      <span className="text-lg font-black" style={{ color: s.dir === "→" ? "#9ef01a" : "#d1d5db" }}>{s.dir}</span>
-                      <span className="text-xs font-bold uppercase tracking-widest text-carbon-400">{s.label}</span>
-                    </div>
-                    <p className="text-sm font-semibold text-carbon-800">{s.text}</p>
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Previous Partners */}
       <section id="partners-prev" className="slide-section py-14 border-b border-carbon-100 bg-white">
         <span className="slide-number">11 / 18</span>
         <div className="wrap">
           <AnimatedSection>
             <Badge variant="success" className="mb-3">Track Record</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2">Our Previous Partners</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 mb-2">Our Previous Partners</h2>
             <p className="text-carbon-500 mb-8">Trusted by global brands across mobility, fintech, real estate and legal sectors</p>
           </AnimatedSection>
 
@@ -139,7 +109,7 @@ export default function PartnersAndAgenda() {
         <div className="wrap">
           <AnimatedSection>
             <Badge variant="success" className="mb-3">Summit Agenda</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2">23–24 June 2026</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 mb-2">23–24 June 2026</h2>
             <p className="text-carbon-500 mb-8">Virtual Summit · Government Entities on Day 1 · Commercial Agents on Day 2</p>
           </AnimatedSection>
 

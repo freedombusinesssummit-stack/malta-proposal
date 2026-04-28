@@ -82,18 +82,57 @@ export default function AboutSlide() {
               Giving our commercial partners an unmatched trust signal
               for HNWI prospects evaluating Malta&apos;s residency and citizenship programmes.
             </p>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
               {[
-                { icon: "🏛️", label: "Residency Malta Agency", sub: "Official Government Partner" },
-                { icon: "🏢", label: "Malta Enterprise", sub: "Inbound Investment Body" },
-                { icon: "💰", label: "Finance Malta", sub: "Capital Markets Authority" },
-                { icon: "🚀", label: "Malta Venture Capital", sub: "Startup Ecosystem Fund" },
+                {
+                  logo: "https://residencymalta.gov.mt/wp-content/uploads/2021/01/Residency-Malta-Agency-Logo.png",
+                  label: "Residency Malta Agency",
+                  sub: "Official Government Partner",
+                  url: "https://residencymalta.gov.mt",
+                  fallback: "🏛️"
+                },
+                {
+                  logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Malta_Enterprise_logo.svg/320px-Malta_Enterprise_logo.svg.png",
+                  label: "Malta Enterprise",
+                  sub: "Inbound Investment Body",
+                  url: "https://maltaenterprise.com",
+                  fallback: "🏢"
+                },
+                {
+                  logo: "https://financemalta.org/wp-content/uploads/2023/01/FM-Logo-Horizontal-Color.png",
+                  label: "Finance Malta",
+                  sub: "Capital Markets Authority",
+                  url: "https://financemalta.org",
+                  fallback: "💰"
+                },
+                {
+                  logo: "https://mvc.com.mt/wp-content/uploads/2022/10/MVC-Logo.png",
+                  label: "Malta Venture Capital",
+                  sub: "Startup Ecosystem Fund",
+                  url: "https://mvc.com.mt",
+                  fallback: "🚀"
+                },
               ].map((p, i) => (
-                <div key={i} className="card-blue flex flex-col items-center text-center py-4">
-                  <span className="text-2xl mb-2">{p.icon}</span>
-                  <p className="text-sm font-bold text-carbon-800 mb-1">{p.label}</p>
-                  <p className="text-xs text-carbon-500">{p.sub}</p>
-                </div>
+                <a key={i} href={p.url} target="_blank" rel="noopener noreferrer"
+                  className="group flex flex-col items-center text-center py-5 px-4 rounded-xl border border-blue-100 bg-white hover:border-blue-300 hover:shadow-md transition-all duration-200">
+                  <div className="h-12 flex items-center justify-center mb-3">
+                    <img
+                      src={p.logo}
+                      alt={p.label}
+                      className="max-h-12 max-w-[120px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.style.display = "none";
+                        const fallback = target.nextElementSibling as HTMLElement;
+                        if (fallback) fallback.style.display = "block";
+                      }}
+                    />
+                    <span className="text-3xl hidden">{p.fallback}</span>
+                  </div>
+                  <p className="text-sm font-bold text-carbon-800 mb-1 group-hover:text-blue-700 transition-colors">{p.label}</p>
+                  <p className="text-xs text-carbon-400">{p.sub}</p>
+                  <span className="mt-2 text-xs text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity">↗ Visit site</span>
+                </a>
               ))}
             </div>
           </AnimatedSection>

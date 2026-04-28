@@ -46,7 +46,7 @@ export default function AudienceSlides() {
         <div className="wrap">
           <AnimatedSection>
             <Badge variant="success" className="mb-3">Audience Profile</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2" style={{ letterSpacing: "-0.5px" }}>Who&apos;s in the Room</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 mb-2" >Who&apos;s in the Room</h2>
             <p className="text-carbon-500 mb-8">Blend of direct clients B2C and high-value industry partners B2B.</p>
           </AnimatedSection>
 
@@ -121,7 +121,7 @@ export default function AudienceSlides() {
         <div className="wrap">
           <AnimatedSection>
             <Badge variant="success" className="mb-3">Audience Snapshot</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2">Position &amp; Role Breakdown</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 mb-2">Position &amp; Role Breakdown</h2>
             <p className="text-carbon-500 mb-8">Senior decision-maker dominant audience with direct budget authority.</p>
           </AnimatedSection>
 
@@ -161,7 +161,7 @@ export default function AudienceSlides() {
         <div className="wrap">
           <AnimatedSection>
             <Badge variant="success" className="mb-3">Behavioral Insights</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2">Top Priority Needs</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 mb-2">Top Priority Needs</h2>
             <p className="text-carbon-500 mb-8">Multiple selections allowed — what Malta Edition attendees actively seek.</p>
           </AnimatedSection>
 

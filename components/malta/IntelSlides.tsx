@@ -48,7 +48,7 @@ export default function IntelSlides() {
         <div className="wrap">
           <AnimatedSection>
             <p className="section-label">FBS Intelligence · Funnel & Insights</p>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2" style={{ letterSpacing: "-0.5px" }}>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 mb-2" >
               FBS: Index Score<br />Funnel &amp; Insights
             </h2>
             <p className="text-carbon-500 mb-8 max-w-xl">
@@ -96,7 +96,7 @@ export default function IntelSlides() {
         <div className="wrap">
           <AnimatedSection>
             <p className="section-label">Audience Insights Output</p>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2" style={{ letterSpacing: "-0.5px" }}>Audience Insights Output</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 mb-2" >Audience Insights Output</h2>
             <p className="text-carbon-500 mb-8">Every lead captured through the FBS Malta funnel is enriched with structured data — geo, demographics, interests, and a proprietary Index Score.</p>
           </AnimatedSection>
 

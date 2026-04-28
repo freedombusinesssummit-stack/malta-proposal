@@ -56,7 +56,7 @@ export default function ContactSlide() {
       <div className="wrap">
         <AnimatedSection>
           <Badge variant="success" className="mb-3">Contact</Badge>
-          <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2" style={{ letterSpacing: "-0.5px" }}>Ready to Partner?</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-carbon-900 mb-2" >Ready to Partner?</h2>
           <p className="text-carbon-500 mb-8 max-w-xl">
             We only work with <strong className="text-carbon-900">8–10 selected partners per event.</strong> Reach out now to secure your slot before the Early Bird deadline on May 20th.
           </p>
