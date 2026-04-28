@@ -4,7 +4,7 @@ import { NumberTicker } from "@/components/magicui/number-ticker";
 import { AnimatedGradientText } from "@/components/magicui/animated-gradient-text";
 
 const STATS = [
-  { raw: "300+", label: "Expected Attendees", icon: "🎯" },
+  { raw: "500+", label: "Expected Attendees", icon: "🎯" },
   { raw: "10.2K", label: "Email Audience", icon: "📊" },
   { raw: "40%+", label: "Email Open Rate", icon: "📬" },
   { raw: "30+", label: "Countries", icon: "🌐" },

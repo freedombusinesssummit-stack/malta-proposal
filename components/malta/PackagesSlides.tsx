@@ -15,7 +15,7 @@ function Cell({ val }: { val: string }) {
 }
 
 const FLOW = [
-  { dir: "→", tag: "You Receive", label: "Direct Exposure to 300+ global founders & investors", green: true },
+  { dir: "→", tag: "You Receive", label: "Direct Exposure to 500+ global founders & investors", green: true },
   { dir: "←", tag: "You Deliver", label: "Deliver Keynote or Panel Talk to showcase your expertise", green: false },
   { dir: "→", tag: "You Receive", label: "Lead Generation with Pre-Qualified Prospects filtered by interest", green: true },
   { dir: "←", tag: "You Deliver", label: "Custom video invitation for maximum pre-event exposure", green: false },

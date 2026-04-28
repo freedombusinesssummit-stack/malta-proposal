@@ -134,7 +134,7 @@ export default function IntelSlides() {
 
           <AnimatedSection delay={200}>
             <div className="flex flex-wrap items-center gap-3 text-sm text-carbon-500">
-              <span className="font-bold text-carbon-900">300+ prospects</span>
+              <span className="font-bold text-carbon-900">500+ prospects</span>
               <span>·</span>
               <span className="font-bold" style={{ color: G.green }}>50% HOT</span>
               <span>·</span>

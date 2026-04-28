@@ -27,7 +27,7 @@ const SPEAKERS = [
 ];
 
 const FLOW_STEPS = [
-  { n: "1", dir: "→", label: "You Receive", text: "Direct exposure to 300+ qualified founders, investors & HNWIs interested in Malta" },
+  { n: "1", dir: "→", label: "You Receive", text: "Direct exposure to 500+ qualified founders, investors & HNWIs interested in Malta" },
   { n: "2", dir: "←", label: "You Deliver", text: "Keynote or Panel Talk to showcase your expertise to decision-makers" },
   { n: "3", dir: "→", label: "You Receive", text: "Lead Generation with Pre-Qualified Prospects filtered by programme, income & timeline" },
   { n: "4", dir: "←", label: "You Deliver", text: "Custom video invitation for maximum pre-event exposure across our 10K+ audience" },
