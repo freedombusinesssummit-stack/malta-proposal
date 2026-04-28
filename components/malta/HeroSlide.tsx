@@ -43,8 +43,8 @@ export default function HeroSlide() {
     <section id="hero" className="slide-section pt-14 bg-white">
       <span className="slide-number">01 / 18</span>
 
-      {/* Full-width hero — NO centering wrapper, padding only */}
-      <div style={{ width: "100%", paddingLeft: "clamp(20px, 5vw, 140px)", paddingRight: "clamp(20px, 5vw, 140px)", paddingTop: "40px", paddingBottom: "48px" }}>
+      {/* Same .wrap as every other section */}
+      <div className="wrap py-12 md:py-16">
 
         {/* Pills */}
         <div className="flex flex-wrap gap-2 mb-6" style={fade(0)}>
@@ -53,15 +53,15 @@ export default function HeroSlide() {
           ))}
         </div>
 
-        {/* Headings — full width, left aligned */}
+        {/* Headings */}
         <div style={fade(80)}>
-          <h1 className="font-black text-carbon-900 leading-tight mb-1" style={{ fontSize: "clamp(28px, 5vw, 64px)", letterSpacing: "-2px" }}>
+          <h1 className="font-black text-carbon-900 leading-tight mb-1 w-full" style={{ fontSize: "clamp(28px, 5vw, 60px)", letterSpacing: "-2px" }}>
             Freedom Business Summit 2026
           </h1>
-          <h2 className="font-black text-carbon-900 leading-none mb-5" style={{ fontSize: "clamp(28px, 5vw, 64px)", letterSpacing: "-2px" }}>
+          <h2 className="font-black text-carbon-900 leading-none mb-5 w-full" style={{ fontSize: "clamp(28px, 5vw, 60px)", letterSpacing: "-2px" }}>
             Malta Edition 🇲🇹
           </h2>
-          <p className="text-carbon-500 mb-6" style={{ fontSize: "clamp(15px, 1.6vw, 20px)", maxWidth: "680px" }}>
+          <p className="text-carbon-500 mb-6" style={{ fontSize: "clamp(15px, 1.5vw, 19px)", maxWidth: "600px" }}>
             The Premier Summit for EU Investment, Residency &amp; Corporate Structuring
           </p>
         </div>
@@ -72,10 +72,10 @@ export default function HeroSlide() {
             { bold: "2 days", text: "of curated content from government agencies and trusted service providers" },
             { bold: "8 sessions", text: "across investment, residency, tax optimization, iGaming & fintech" },
           ].map((b, i) => (
-            <p key={i} className="flex items-start gap-2.5" style={{ fontSize: "clamp(14px, 1.4vw, 16px)" }}>
+            <p key={i} className="flex items-start gap-2.5">
               <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5" style={{ background: "#3b82f6" }} />
-              <span className="font-black text-carbon-900">
-                {b.bold}&nbsp;<span className="font-black text-carbon-900">{b.text}</span>
+              <span className="font-black text-carbon-900 text-sm md:text-base">
+                {b.bold}&nbsp;—&nbsp;{b.text}
               </span>
             </p>
           ))}

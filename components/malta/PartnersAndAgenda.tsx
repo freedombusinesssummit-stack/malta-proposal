@@ -2,7 +2,6 @@
 import { useState } from "react";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Badge } from "@/components/ui/badge";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const PARTNERS = [
   "Estonia e-Residency","Insured Nomads","Binance","Globalization Partners",
@@ -145,52 +144,47 @@ export default function PartnersAndAgenda() {
           </AnimatedSection>
 
           <AnimatedSection delay={100}>
-            <Tabs defaultValue="day1">
-              <TabsList className="mb-6 w-full justify-start gap-1 bg-carbon-100 p-1 rounded-xl h-auto">
-                <TabsTrigger value="day1" className="rounded-lg text-xs sm:text-sm font-semibold">
-                  Day 1: Malta as a Strategic Solution
-                </TabsTrigger>
-                <TabsTrigger value="day2" className="rounded-lg text-xs sm:text-sm font-semibold">
-                  Day 2: Incorporation &amp; Tax Optimization
-                </TabsTrigger>
-              </TabsList>
-
-              <TabsContent value="day1">
-                <div className="space-y-2">
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Day 1 */}
+              <div>
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-red-50 text-red-700 border border-red-200">🏛 GOV</span>
+                  <h3 className="font-black text-carbon-900 text-lg">Day 1: Malta as a Strategic Solution</h3>
+                </div>
+                <div className="space-y-3">
                   {DAY1.map((s, i) => (
-                    <div key={i} className="flex items-start gap-4 rounded-xl border border-carbon-200 p-4 hover:border-blue-200 hover:bg-blue-50 transition-all">
-                      <span className="font-black text-3xl text-carbon-100 flex-shrink-0 leading-none w-10">{s.num}</span>
+                    <div key={i} className="flex items-start gap-3 rounded-xl border border-carbon-200 bg-white p-4 hover:border-blue-200 hover:bg-blue-50 transition-all">
+                      <span className="font-black text-2xl text-carbon-100 flex-shrink-0 leading-none w-8">{s.num}</span>
                       <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-1">
-                          <p className="text-xs font-bold uppercase tracking-widest text-blue-600">{s.org}</p>
-                          <span className="text-xs px-2 py-0.5 rounded font-bold bg-red-50 text-red-600 border border-red-200">🏛 GOV</span>
-                        </div>
-                        <p className="font-black text-carbon-900 text-base leading-snug">{s.title}</p>
-                        <p className="text-sm text-carbon-500 mt-1">{s.desc}</p>
+                        <p className="text-xs font-bold uppercase tracking-widest text-red-600 mb-1">{s.org}</p>
+                        <p className="font-black text-carbon-900 text-sm leading-snug">{s.title}</p>
+                        <p className="text-xs text-carbon-500 mt-1">{s.desc}</p>
                       </div>
                     </div>
                   ))}
                 </div>
-              </TabsContent>
+              </div>
 
-              <TabsContent value="day2">
-                <div className="space-y-2">
+              {/* Day 2 */}
+              <div>
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">🏢 COMMERCIAL</span>
+                  <h3 className="font-black text-carbon-900 text-lg">Day 2: Incorporation &amp; Tax Optimization</h3>
+                </div>
+                <div className="space-y-3">
                   {DAY2.map((s, i) => (
-                    <div key={i} className="flex items-start gap-4 rounded-xl border border-carbon-200 p-4 hover:border-blue-200 hover:bg-blue-50 transition-all">
-                      <span className="font-black text-3xl text-carbon-100 flex-shrink-0 leading-none w-10">{s.num}</span>
+                    <div key={i} className="flex items-start gap-3 rounded-xl border border-carbon-200 bg-white p-4 hover:border-blue-200 hover:bg-blue-50 transition-all">
+                      <span className="font-black text-2xl text-carbon-100 flex-shrink-0 leading-none w-8">{s.num}</span>
                       <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-1">
-                          <p className="text-xs font-bold uppercase tracking-widest text-blue-600">{s.org}</p>
-                          <span className="text-xs px-2 py-0.5 rounded font-bold bg-blue-50 text-blue-700 border border-blue-200">🏢 COMMERCIAL</span>
-                        </div>
-                        <p className="font-black text-carbon-900 text-base leading-snug">{s.title}</p>
-                        <p className="text-sm text-carbon-500 mt-1">{s.desc}</p>
+                        <p className="text-xs font-bold uppercase tracking-widest text-blue-600 mb-1">{s.org}</p>
+                        <p className="font-black text-carbon-900 text-sm leading-snug">{s.title}</p>
+                        <p className="text-xs text-carbon-500 mt-1">{s.desc}</p>
                       </div>
                     </div>
                   ))}
                 </div>
-              </TabsContent>
-            </Tabs>
+              </div>
+            </div>
           </AnimatedSection>
         </div>
       </section>
