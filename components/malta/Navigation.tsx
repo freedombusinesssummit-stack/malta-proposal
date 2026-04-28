@@ -4,19 +4,15 @@ import { useEffect, useState } from "react";
 const SLIDES = [
   { id: "hero", label: "Overview" },
   { id: "about", label: "About" },
+  { id: "partnership", label: "Partnership" },
   { id: "features", label: "Why FBS" },
-  { id: "directions", label: "Directions" },
-  { id: "topics", label: "Topics" },
-  { id: "numbers", label: "Numbers" },
+  { id: "agenda", label: "Agenda" },
   { id: "audience", label: "Audience" },
   { id: "snapshot", label: "Snapshot" },
-  { id: "behavioral", label: "Insights" },
   { id: "intel", label: "Data" },
   { id: "funnel", label: "Funnel" },
-  { id: "partners-prev", label: "Partners" },
-  { id: "agenda", label: "Agenda" },
   { id: "flow", label: "Flow" },
-  { id: "packages", label: "Packages" },
+  { id: "partners-prev", label: "Partners" },
   { id: "pricing-brand", label: "Pricing" },
   { id: "contact", label: "Contact" },
 ];
@@ -49,13 +45,11 @@ export default function Navigation() {
     <nav className={`fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-200 ${scrolled ? "border-b border-carbon-200 shadow-sm" : "border-b border-transparent"}`}>
       <div className="wrap">
         <div className="flex items-center justify-between h-14 gap-4">
-          {/* Logo */}
           <div className="flex items-center gap-2 flex-shrink-0">
             <div className="w-7 h-7 rounded-md flex items-center justify-center font-black text-xs flex-shrink-0" style={{ background: "#9ef01a", color: "#111827" }}>FS</div>
             <span className="font-bold text-carbon-900 text-sm hidden sm:block">Freedom Summit</span>
           </div>
 
-          {/* Nav links desktop */}
           <div className="hidden lg:flex items-center gap-5 flex-1 justify-center">
             {[
               { id: "about", label: "About" },
@@ -70,9 +64,7 @@ export default function Navigation() {
             ))}
           </div>
 
-          {/* Right side — progress dots + equal-size CTA */}
           <div className="flex items-center gap-3 flex-shrink-0">
-            {/* Progress dots */}
             <div className="hidden xl:flex items-center gap-1">
               {SLIDES.map(s => (
                 <button key={s.id} onClick={() => go(s.id)} title={s.label}
@@ -81,7 +73,6 @@ export default function Navigation() {
               ))}
             </div>
 
-            {/* View Packages — same size as Partner button */}
             <button
               onClick={() => go("pricing-brand")}
               className="hidden sm:flex items-center justify-center h-9 px-4 rounded-lg text-sm font-semibold border border-carbon-200 text-carbon-700 hover:border-lime-300 hover:text-carbon-900 transition-all whitespace-nowrap"
@@ -89,7 +80,6 @@ export default function Navigation() {
               View Packages
             </button>
 
-            {/* Partner CTA */}
             <a
               href="mailto:denis@fsummit.net"
               className="flex items-center justify-center h-9 px-4 rounded-lg text-sm font-bold text-carbon-900 transition-all hover:opacity-90 whitespace-nowrap"
@@ -98,7 +88,6 @@ export default function Navigation() {
               Partner With Us
             </a>
 
-            {/* Mobile menu toggle */}
             <button className="lg:hidden p-1 ml-1" onClick={() => setOpen(!open)}>
               <div className="w-5 space-y-1">
                 <span className="block h-0.5 bg-carbon-600 transition-all" style={{ transform: open ? "rotate(45deg) translateY(6px)" : "none" }} />
@@ -110,7 +99,6 @@ export default function Navigation() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {open && (
         <div className="lg:hidden border-t border-carbon-100 bg-white py-2">
           {SLIDES.map(s => (

@@ -58,7 +58,7 @@ export default function ContactSlide() {
           <Badge variant="success" className="mb-3">Contact</Badge>
           <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2" style={{ letterSpacing: "-0.5px" }}>Ready to Partner?</h2>
           <p className="text-carbon-500 mb-8 max-w-xl">
-            We only work with <strong className="text-carbon-900">8–10 selected partners per event.</strong> Reach out now to secure your slot before the Early Bird deadline on May 10th.
+            We only work with <strong className="text-carbon-900">8–10 selected partners per event.</strong> Reach out now to secure your slot before the Early Bird deadline on May 20th.
           </p>
         </AnimatedSection>
 
@@ -135,7 +135,7 @@ export default function ContactSlide() {
           <div className="rounded-xl p-5 flex items-center justify-between" style={{ background: "#f8fff0", border: "1px solid #b5f55a" }}>
             <div>
               <p className="text-xs text-carbon-500 font-medium mb-0.5">Website</p>
-              <p className="font-bold text-carbon-900">fsummit.net/usa</p>
+              <p className="font-bold text-carbon-900">maltaedition.fsummit.net</p>
             </div>
             <a href="https://fsummit.net" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 rounded-lg text-sm font-bold text-carbon-900 hover:opacity-90 transition-all"

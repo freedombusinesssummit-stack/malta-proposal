@@ -14,11 +14,11 @@ const roles = [
 ];
 
 const behavioral = [
-  { label: "Relocation / Second Residency", pct: 68, note: "2 out of 3 want actionable advice on visas, residencies, or citizenship." },
-  { label: "Building & Scaling Borderless Businesses", pct: 66, note: "Founders need guidance on cross-border operations and compliance." },
-  { label: "Tax Optimization & Company Formations", pct: 56, note: "More than half ready for practical steps — SG, MY, HK setups dominate." },
-  { label: "Real Estate Investment Opportunities", pct: 46, note: "Nearly half are investor-minded with readiness to diversify geographically." },
-  { label: "Health, Mobility & Security", pct: 29, note: "Lifestyle and family-focused relocators. Opportunity for wellness providers." },
+  { label: "Residency / Second Passport", pct: 72, note: "3 out of 4 want actionable advice on Malta residency, CBI, or EU citizenship." },
+  { label: "Malta Residency Specifically (MPRP)", pct: 58, note: "More than half actively researching Malta's official residency programmes." },
+  { label: "Tax Optimization & Corporate Setup", pct: 64, note: "Founders need guidance on Malta's refund system, holding structures, and compliance." },
+  { label: "EU Market Access via Malta", pct: 51, note: "Over half seeking a credible EU gateway for business expansion." },
+  { label: "iGaming / Fintech Licensing", pct: 38, note: "Significant segment of operators seeking MGA licenses and regulated setup." },
 ];
 
 function AnimatedProgress({ value, delay = 0 }: { value: number; delay?: number }) {
@@ -41,13 +41,12 @@ function AnimatedProgress({ value, delay = 0 }: { value: number; delay?: number 
 export default function AudienceSlides() {
   return (
     <>
-      {/* AUDIENCE PROFILE */}
       <section id="audience" className="slide-section py-14 border-b border-carbon-100 bg-white">
-        <span className="slide-number">06 / 18</span>
+        <span className="slide-number">05 / 18</span>
         <div className="wrap">
           <AnimatedSection>
             <Badge variant="success" className="mb-3">Audience Profile</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2" style={{ letterSpacing: "-0.5px" }}>Who's in the Room</h2>
+            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2" style={{ letterSpacing: "-0.5px" }}>Who&apos;s in the Room</h2>
             <p className="text-carbon-500 mb-8">Blend of direct clients B2C and high-value industry partners B2B.</p>
           </AnimatedSection>
 
@@ -56,14 +55,14 @@ export default function AudienceSlides() {
               <div className="spotlight-card rounded-xl p-6 border transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 h-full" style={{ borderTop: "4px solid #9ef01a", borderLeft: "1px solid #e5e7eb", borderRight: "1px solid #e5e7eb", borderBottom: "1px solid #e5e7eb", background: "#f8fff0" }}>
                 <div className="text-4xl font-black mb-2 gradient-text">60%</div>
                 <p className="font-bold text-carbon-900 mb-1">B2C Clients</p>
-                <p className="text-sm text-carbon-600">Entrepreneurs, investors, expats & families seeking relocation, residency, and investment</p>
+                <p className="text-sm text-carbon-600">HNWIs, entrepreneurs, investors, and families seeking Malta residency, EU access, and investment</p>
               </div>
             </AnimatedSection>
             <AnimatedSection delay={130}>
               <div className="spotlight-card rounded-xl p-6 border border-carbon-200 bg-white transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 h-full">
                 <div className="text-4xl font-black text-carbon-900 mb-2">40%</div>
                 <p className="font-bold text-carbon-900 mb-1">B2B Partners</p>
-                <p className="text-sm text-carbon-600">Service providers, agencies looking for partnerships, cross-referrals and deals</p>
+                <p className="text-sm text-carbon-600">Service providers, agencies, law firms, and consultants seeking partnerships and qualified referrals</p>
               </div>
             </AnimatedSection>
           </div>
@@ -72,7 +71,7 @@ export default function AudienceSlides() {
             <AnimatedSection delay={180}>
               <div className="rounded-xl border border-carbon-200 bg-white p-5">
                 <p className="text-xs font-bold text-lime-400 uppercase tracking-widest mb-4">Individuals</p>
-                {["Digital Entrepreneurs / Consultants","HNWI / Investors","Relocating Expats / Families","Agency & E-Commerce Owners"].map((a, i) => (
+                {["HNWIs / Investors", "Digital Entrepreneurs / Consultants", "Relocating Families", "iGaming / Fintech Founders"].map((a, i) => (
                   <div key={i} className="flex items-center gap-2.5 py-2 border-b border-carbon-100 last:border-0 group">
                     <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 group-hover:scale-150 transition-transform" style={{ background: "#9ef01a" }} />
                     <span className="text-sm text-carbon-700 font-medium">{a}</span>
@@ -83,9 +82,9 @@ export default function AudienceSlides() {
             <AnimatedSection delay={220}>
               <div className="rounded-xl border border-carbon-200 bg-white p-5">
                 <p className="text-xs font-bold text-lime-400 uppercase tracking-widest mb-4">Service Providers</p>
-                {["Legal, Tax, Banking, Visa, Relocation","Real Estate Developers & Agencies","Mobility & Investment Migration Firms","Investment Companies & Family Offices"].map((a, i) => (
+                {["Legal, Tax, Banking, Residency", "Real Estate Developers & Agencies", "iGaming & Fintech Firms", "Investment Companies & Family Offices"].map((a, i) => (
                   <div key={i} className="flex items-center gap-2.5 py-2 border-b border-carbon-100 last:border-0 group">
-                    <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 group-hover:scale-150 transition-transform" style={{ background: "#9ef01a" }} />
+                    <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 group-hover:scale-150 transition-transform" style={{ background: "#6b7280" }} />
                     <span className="text-sm text-carbon-700 font-medium">{a}</span>
                   </div>
                 ))}
@@ -93,21 +92,22 @@ export default function AudienceSlides() {
             </AnimatedSection>
           </div>
 
-          <AnimatedSection delay={280}>
-            <div className="rounded-xl border border-carbon-200 bg-carbon-50 p-5">
-              <p className="text-xs font-bold text-carbon-400 uppercase tracking-widest mb-4">Industry Breakdown</p>
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+          <AnimatedSection delay={260}>
+            <div className="rounded-xl border border-carbon-100 bg-carbon-50 p-5">
+              <p className="text-xs font-bold text-lime-400 uppercase tracking-widest mb-3">Industry Breakdown</p>
+              <div className="flex flex-wrap gap-2">
                 {[
-                  { label: "Technology, IT & AI", pct: "24%" },
-                  { label: "Real Estate & Property", pct: "14.7%" },
-                  { label: "Finance & Consulting", pct: "12%" },
-                  { label: "Law & Government", pct: "8%" },
-                  { label: "Healthcare & MedTech", pct: "5%" },
-                ].map((ind, i) => (
-                  <div key={i} className="bg-white border border-carbon-200 rounded-xl p-3 text-center hover:border-lime-300 hover:shadow-sm transition-all cursor-default">
-                    <div className="text-xl font-black mb-0.5 gradient-text">{ind.pct}</div>
-                    <div className="text-xs text-carbon-500 font-medium leading-tight">{ind.label}</div>
-                  </div>
+                  { label: "Finance & Legal", pct: "28%" },
+                  { label: "Technology & AI", pct: "22%" },
+                  { label: "Real Estate", pct: "16%" },
+                  { label: "iGaming & Fintech", pct: "14%" },
+                  { label: "Consulting", pct: "10%" },
+                  { label: "Other", pct: "10%" },
+                ].map((item, i) => (
+                  <span key={i} className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-white border border-carbon-200 text-carbon-700">
+                    <span className="font-black" style={{ color: "#9ef01a" }}>{item.pct}</span>
+                    {item.label}
+                  </span>
                 ))}
               </div>
             </div>
@@ -115,80 +115,79 @@ export default function AudienceSlides() {
         </div>
       </section>
 
-      {/* SNAPSHOT */}
-      <section id="snapshot" className="slide-section py-14 border-b border-carbon-100 bg-carbon-50">
-        <span className="slide-number">07 / 18</span>
+      {/* Snapshot */}
+      <section id="snapshot" className="slide-section py-14 bg-white border-b border-carbon-100">
+        <span className="slide-number">06 / 18</span>
         <div className="wrap">
           <AnimatedSection>
             <Badge variant="success" className="mb-3">Audience Snapshot</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-8" style={{ letterSpacing: "-0.5px" }}>Position & Role Breakdown</h2>
+            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2">Position &amp; Role Breakdown</h2>
+            <p className="text-carbon-500 mb-8">Senior decision-maker dominant audience with direct budget authority.</p>
           </AnimatedSection>
 
-          <div className="space-y-3">
+          <div className="space-y-4 mb-8">
             {roles.map((r, i) => (
               <AnimatedSection key={i} delay={i * 60}>
-                <div className="bg-white rounded-xl border border-carbon-200 p-4 hover:shadow-sm hover:border-lime-200 transition-all duration-200">
-                  <div className="flex items-center gap-4">
-                    <span className="text-xl font-black w-14 text-right flex-shrink-0 tabular-nums gradient-text">{r.pct}%</span>
-                    <div className="flex-1 min-w-0">
-                      <div className="flex items-center justify-between mb-2">
-                        <p className="font-semibold text-sm text-carbon-900 truncate">{r.role}</p>
-                        <Badge variant="outline" className="ml-2 hidden md:flex text-xs shrink-0">{r.note}</Badge>
+                <div className="flex items-center gap-4">
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between mb-1.5">
+                      <span className="text-sm font-semibold text-carbon-800">{r.role}</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs text-carbon-400">{r.note}</span>
+                        <span className="font-black text-carbon-900 text-sm">{r.pct}%</span>
                       </div>
-                      <AnimatedProgress value={r.pct} delay={i * 60 + 200} />
                     </div>
+                    <AnimatedProgress value={r.pct} delay={i * 60 + 200} />
                   </div>
                 </div>
               </AnimatedSection>
             ))}
           </div>
 
-          <AnimatedSection delay={450}>
-            <div className="rounded-xl mt-6 p-5" style={{ background: "#f8fff0", border: "1px solid #b5f55a" }}>
-              <p className="text-sm text-carbon-700">
-                <strong className="text-carbon-900">Takeaway:</strong> Founder-heavy audience — over{" "}
-                <strong style={{ color: "#3d8000" }}>75% are entrepreneurs or senior executives</strong> with direct authority over investment, expansion, and partnership decisions.
+          <AnimatedSection delay={400}>
+            <div className="rounded-xl p-5 border" style={{ background: "linear-gradient(135deg, #f8fff0, #f0fdf4)", borderColor: "#b5f55a" }}>
+              <p className="text-sm font-bold text-carbon-800 mb-1">Key Takeaway</p>
+              <p className="text-sm text-carbon-600">
+                Founder-heavy audience — over <strong className="text-lime-600">75% are entrepreneurs or senior executives</strong> with direct authority over investment, residency, and structuring decisions.
               </p>
             </div>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* BEHAVIORAL */}
-      <section id="behavioral" className="slide-section py-14 border-b border-carbon-100 bg-white">
-        <span className="slide-number">08 / 18</span>
+      {/* Behavioral */}
+      <section id="behavioral" className="slide-section py-14 bg-white border-b border-carbon-100">
+        <span className="slide-number">07 / 18</span>
         <div className="wrap">
           <AnimatedSection>
             <Badge variant="success" className="mb-3">Behavioral Insights</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2" style={{ letterSpacing: "-0.5px" }}>Top Priority Needs</h2>
-            <p className="text-carbon-500 mb-8">Multiple selections allowed — what respondents actively seek.</p>
+            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2">Top Priority Needs</h2>
+            <p className="text-carbon-500 mb-8">Multiple selections allowed — what Malta Edition attendees actively seek.</p>
           </AnimatedSection>
 
-          <div className="space-y-4">
+          <div className="space-y-5">
             {behavioral.map((b, i) => (
-              <AnimatedSection key={i} delay={i * 70}>
-                <div className="rounded-xl border border-carbon-200 bg-white p-5 hover:shadow-sm hover:border-lime-200 transition-all duration-200 group">
-                  <div className="flex items-start gap-4 mb-3">
-                    <span className="text-2xl font-black w-14 text-right flex-shrink-0 tabular-nums gradient-text leading-tight">{b.pct}%</span>
+              <AnimatedSection key={i} delay={i * 80}>
+                <div className="card-muted rounded-xl">
+                  <div className="flex items-start justify-between gap-4 mb-2">
                     <div>
-                      <p className="font-bold text-carbon-900 mb-0.5">{b.label}</p>
-                      <p className="text-sm text-carbon-500">{b.note}</p>
+                      <p className="font-bold text-carbon-900 text-sm">{b.label}</p>
+                      <p className="text-xs text-carbon-500 mt-0.5">{b.note}</p>
                     </div>
+                    <span className="font-black text-xl" style={{ color: "#9ef01a" }}>{b.pct}%</span>
                   </div>
-                  <div className="ml-[72px]">
-                    <AnimatedProgress value={b.pct} delay={i * 70 + 200} />
-                  </div>
+                  <AnimatedProgress value={b.pct} delay={i * 80 + 300} />
                 </div>
               </AnimatedSection>
             ))}
           </div>
 
-          <AnimatedSection delay={450}>
-            <div className="rounded-xl mt-6 p-5" style={{ background: "#f8fff0", border: "1px solid #b5f55a" }}>
-              <p className="text-sm text-carbon-700">
-                <strong className="text-carbon-900">Takeaway:</strong> Mobility-first mindset —{" "}
-                <strong style={{ color: "#3d8000" }}>68% want</strong> residency or citizenship.{" "}
-                <strong className="text-carbon-900">The #1 need is "trusted service providers."</strong>
+          <AnimatedSection delay={500}>
+            <div className="mt-6 rounded-xl p-4 border border-lime-200 bg-lime-50">
+              <p className="text-sm font-bold text-carbon-800">Takeaway</p>
+              <p className="text-sm text-carbon-600 mt-1">
+                Malta-first mindset — <strong className="text-lime-600">72% want residency or citizenship</strong> options.{" "}
+                The #1 need is <strong className="text-carbon-800">&ldquo;trusted service providers&rdquo;</strong> in the Malta ecosystem.
               </p>
             </div>
           </AnimatedSection>

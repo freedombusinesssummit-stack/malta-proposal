@@ -1,190 +1,148 @@
 "use client";
 import AnimatedSection from "@/components/AnimatedSection";
 import { NumberTicker } from "@/components/magicui/number-ticker";
-import { Badge } from "@/components/ui/badge";
 import { AnimatedGradientText } from "@/components/magicui/animated-gradient-text";
 
 const STATS = [
-  { raw: "500–700", label: "Expected Attendees", icon: "🎯" },
+  { raw: "300+", label: "Expected Attendees", icon: "🎯" },
   { raw: "10.2K", label: "Email Audience", icon: "📊" },
-  { raw: "33–52%", label: "Email Open Rate", icon: "📬" },
+  { raw: "40%+", label: "Email Open Rate", icon: "📬" },
   { raw: "30+", label: "Countries", icon: "🌐" },
-  { val: 10, suffix: "", label: "Speakers", icon: "🎤" },
+  { val: 8, suffix: "", label: "Sessions", icon: "🎤" },
   { raw: "2", label: "Day Event", icon: "📅" },
 ];
 
 const FEATURES = [
-  { icon: "📡", title: "Real Intent Signals", text: "Data-driven virtual summit capturing real mobility intent — not vanity traffic." },
-  { icon: "🌍", title: "Global Exposure", text: "100% global distribution and media exposure across 30+ countries." },
-  { icon: "🎯", title: "Full Funnel Tracking", text: "Intent tracking from day one — survey, session, and post-event behavior." },
-  { icon: "🔒", title: "Category Exclusivity", text: "Exclusive positioning per category and jurisdiction. No direct competitors." },
-  { icon: "👔", title: "Decision-Maker Audience", text: "75% founders/execs with direct budget authority. Not gatekept by assistants." },
+  { icon: "🏛️", title: "Government-Backed Credibility", text: "Only summit co-produced with Residency Malta Agency — direct government endorsement for your brand." },
+  { icon: "📡", title: "Real Intent Signals", text: "Data-driven summit capturing real mobility intent — not vanity traffic. Every attendee is pre-qualified." },
+  { icon: "🌍", title: "Global Exposure", text: "100% global distribution and media exposure across EU, UK, MENA, India, and Asia-Pacific markets." },
+  { icon: "🔒", title: "Category Exclusivity", text: "Exclusive positioning per category and jurisdiction. No direct competitors on the same stage." },
+  { icon: "👔", title: "Decision-Maker Audience", text: "75% founders and senior executives with direct budget authority. Not gatekept by assistants." },
 ];
 
 const TOPICS = [
-  { icon: "🇺🇸", title: "Inbound Mobility to the U.S.: Visas, Capital & Market Access", text: "How founders and investors enter the US — from EB-5 and E-2 to structuring market access and deploying capital efficiently." },
-  { icon: "🌍", title: "Second Passports & Residencies for U.S. Citizens", text: "Building a Plan B through CBI/RBI programs and strategic residency options beyond the US." },
-  { icon: "🗺️", title: "Health, Security & Mobility: Building a Personal Safety Net", text: "How globally mobile individuals protect their families, assets, and lifestyle across jurisdictions." },
-  { icon: "💻", title: "U.S. Company Structures: Tax Optimization & Asset Protection", text: "How to structure entities in the US for efficiency, scalability, and cross-border operations." },
-  { icon: "🛸", title: "Legal Tax Optimization for U.S. Citizens", text: "What actually works (and what doesn't) when reducing tax exposure as a US person." },
-  { icon: "🏠", title: "Global Real Estate for U.S. Investors", text: "Using property as a tool for residency, diversification, and capital preservation." },
-  { icon: "🇪🇺", title: "Where Americans Are Moving and Why", text: "European residency, LATAM, and Caribbean jurisdictions — what's driving the shift and where opportunities are." },
-  { icon: "🌐", title: "Cross-Border Structuring: Combining Residency, Tax & Business", text: "How to align citizenship, company structure, and tax strategy into one coherent global setup." },
+  { icon: "🇲🇹", title: "Inbound Investment: Why Malta", text: "Industries in focus, regulatory framework, EU single market access, funding instruments, and government support for international capital." },
+  { icon: "💰", title: "Capital Markets & Financial Infrastructure", text: "Malta's capital markets ecosystem, banking access, financial services gateway, and EU international finance hub positioning." },
+  { icon: "🚀", title: "Startup in Malta — Malta Venture Capital", text: "MVC invests in high-potential startups driving economic diversification, sustainable development, and meaningful social impact." },
+  { icon: "🏠", title: "Relocation & Residency Programmes", text: "MPRP · Nomad Permit · Startup Permit · Family Office Residency — all official Malta residency pathways." },
+  { icon: "🏢", title: "Tax Optimization & Corporate Structuring", text: "Malta's 6/7ths refund system, participation exemption, double tax treaty network, and practical structuring for founders and HNWIs." },
+  { icon: "🎮", title: "iGaming: Licensing, Payments & Compliance", text: "MGA licensing framework, payment processing, AML/KYC obligations, and what it takes to operate a regulated gaming business from Malta." },
+  { icon: "💻", title: "Fintech, SaaS & Digital-Native Companies", text: "Structuring Fintech, SaaS, and crypto/digital asset companies under Malta's MFSA-regulated environment and VFA framework." },
+  { icon: "🌐", title: "EU Market Access via Malta", text: "How to incorporate in Malta, structure holding companies, and access the EU single market for scalable cross-border operations." },
 ];
 
 export default function AboutSlide() {
   return (
     <>
-      {/* ABOUT — Section 02 */}
-      <section id="about" className="slide-section py-16 border-b border-carbon-100 bg-white">
+      <section id="about" className="slide-section bg-white">
         <span className="slide-number">02 / 18</span>
-        <div className="wrap">
-          <AnimatedSection>
-            <Badge variant="success" className="mb-4">About the Event</Badge>
-            <h2 className="font-black text-carbon-900 mb-6" style={{ fontSize: "clamp(26px, 4vw, 48px)", letterSpacing: "-1px", lineHeight: 1.1 }}>
-              What is FBS USA Mobility Edition?
+        <div className="wrap py-16 md:py-20">
+          <AnimatedSection className="anim">
+            <p className="section-label">About the Event</p>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 leading-tight mb-4">
+              What is FBS Malta Edition?
             </h2>
-          </AnimatedSection>
-          <AnimatedSection delay={80}>
-            <div className="mb-8">
-              <p className="text-carbon-700 leading-relaxed mb-4" style={{ fontSize: "clamp(15px, 1.6vw, 18px)" }}>
-                FBS USA Mobility Edition is our <strong className="text-carbon-900">flagship event focused on the American market</strong> — the core hub of global mobility, capital, and cross-border structuring.
-              </p>
-              <p className="text-carbon-700 leading-relaxed mb-4" style={{ fontSize: "clamp(15px, 1.6vw, 18px)" }}>
-                This is not just another regional event. The US sits at the center of global flows — where capital enters, exits, and gets structured.
-              </p>
-              <p className="text-carbon-700 leading-relaxed" style={{ fontSize: "clamp(15px, 1.6vw, 18px)" }}>
-                A two-day <strong className="text-carbon-900">virtual summit</strong> designed around inbound and outbound US mobility strategies for founders, investors, and globally mobile individuals.
-              </p>
-            </div>
+            <p className="text-carbon-600 text-base md:text-lg max-w-2xl mb-4 leading-relaxed">
+              FBS Malta Edition is a two-day in-person summit at the intersection of investment migration,
+              EU corporate structuring, and global mobility. Held in Valletta — the EU&apos;s smallest capital
+              with outsized strategic significance — convening HNWIs, founders, and service providers around
+              Malta&apos;s unique proposition as a gateway jurisdiction.
+            </p>
+            <p className="text-carbon-500 text-sm max-w-2xl mb-8 leading-relaxed">
+              <strong className="text-carbon-800">Day 1</strong> features government entities on stage. {" "}
+              <strong className="text-carbon-800">Day 2</strong> features commercial agents — lawyers, tax advisors, iGaming specialists, and Fintech experts.
+              Produced in official partnership with{" "}
+              <strong className="text-lime-600">Residency Malta Agency</strong>.
+            </p>
           </AnimatedSection>
 
-          {/* Stats grid — bigger numbers */}
-          <AnimatedSection delay={160}>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-6">
+          <AnimatedSection delay={150} className="anim">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
               {STATS.map((s, i) => (
-                <div key={i} className="rounded-xl border border-carbon-200 bg-white p-5 hover:border-lime-300 hover:shadow-sm transition-all text-center group">
-                  <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">{s.icon}</div>
-                  <div className="font-black mb-1 text-carbon-900" style={{ fontSize: "clamp(22px, 3vw, 36px)", letterSpacing: "-0.5px" }}>
-                    {s.raw ? s.raw : <NumberTicker value={s.val!} suffix={s.suffix} duration={1800} />}
+                <div key={i} className="card text-center py-5">
+                  <div className="text-2xl mb-1">{s.icon}</div>
+                  <div className="font-black text-2xl text-carbon-900 leading-none mb-1">
+                    {s.val !== undefined ? <NumberTicker value={s.val} suffix={s.suffix ?? ""} /> : s.raw}
                   </div>
-                  <p className="text-xs text-carbon-400 font-medium">{s.label}</p>
+                  <div className="text-xs text-carbon-500 font-medium">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <section id="partnership" className="slide-section" style={{ background: "#f0fdf4", borderTop: "1px solid #d1fae5" }}>
+        <span className="slide-number">03 / 18</span>
+        <div className="wrap py-16 md:py-20">
+          <AnimatedSection className="anim">
+            <p className="section-label">Official Government Partnership</p>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 leading-tight mb-4">
+              Produced in Partnership with <span className="text-lime-600">Residency Malta Agency</span>
+            </h2>
+            <p className="text-carbon-600 text-base max-w-2xl mb-6 leading-relaxed">
+              FBS Malta is the only private summit produced in direct cooperation with Malta&apos;s official Residency Agency.
+              This gives commercial partners co-branding alongside a government authority — an unmatched trust signal
+              for HNWI prospects evaluating Malta&apos;s residency and citizenship programmes.
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+              {[
+                { icon: "🏛️", label: "Residency Malta Agency", sub: "Official Government Partner" },
+                { icon: "🏢", label: "Malta Enterprise", sub: "Inbound Investment Body" },
+                { icon: "💰", label: "Finance Malta", sub: "Capital Markets Authority" },
+                { icon: "🚀", label: "Malta Venture Capital", sub: "Startup Ecosystem Fund" },
+              ].map((p, i) => (
+                <div key={i} className="card-green flex flex-col items-center text-center py-4">
+                  <span className="text-2xl mb-2">{p.icon}</span>
+                  <p className="text-sm font-bold text-carbon-800 mb-1">{p.label}</p>
+                  <p className="text-xs text-carbon-500">{p.sub}</p>
+                </div>
+              ))}
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <section id="features" className="slide-section bg-white">
+        <span className="slide-number">04 / 18</span>
+        <div className="wrap py-16 md:py-20">
+          <AnimatedSection className="anim">
+            <p className="section-label">Why Partner with FBS</p>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 leading-tight mb-8">What Makes Us Different</h2>
+            <div className="grid sm:grid-cols-2 gap-3 mb-10">
+              {FEATURES.map((f, i) => (
+                <div key={i} className="feature-card">
+                  <div className="flex items-start gap-3">
+                    <span className="text-xl mt-0.5 flex-shrink-0">{f.icon}</span>
+                    <div>
+                      <p className="font-bold text-carbon-900 text-sm mb-1">{f.title}</p>
+                      <p className="text-carbon-500 text-sm leading-relaxed">{f.text}</p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
           </AnimatedSection>
 
-          <AnimatedSection delay={240}>
-            <div className="inline-flex items-start gap-3 rounded-xl px-5 py-3.5" style={{ background: "#f8fff0", border: "1px solid #b5f55a" }}>
-              <span className="text-xl">📊</span>
-              <p className="font-semibold" style={{ color: "#3d8000" }}>For speakers: full access to audience insights, segmented leads & intent signals</p>
+          <AnimatedSection delay={200} className="anim">
+            <p className="section-label mb-3">Key Topics</p>
+            <h3 className="text-xl font-black text-carbon-900 mb-5">8 Sessions Across 2 Days</h3>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {TOPICS.map((t, i) => (
+                <div key={i} className="card hover:border-lime-200 transition-colors">
+                  <div className="flex items-start gap-3">
+                    <span className="text-xl mt-0.5 flex-shrink-0">{t.icon}</span>
+                    <div>
+                      <p className="font-bold text-carbon-900 text-sm mb-1">{t.title}</p>
+                      <p className="text-carbon-500 text-xs leading-relaxed">{t.text}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </AnimatedSection>
         </div>
       </section>
-
-      {/* FEATURES — Section 03 */}
-      <section id="features" className="slide-section py-14 border-b border-carbon-100" style={{ background: "#f8fff0" }}>
-        <span className="slide-number">03 / 18</span>
-        <div className="wrap">
-          <AnimatedSection>
-            <Badge variant="success" className="mb-3">Why Partner with FBS</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-10" style={{ letterSpacing: "-0.5px" }}>What Makes Us Different</h2>
-          </AnimatedSection>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {FEATURES.map((f, i) => (
-              <AnimatedSection key={i} delay={i * 80}>
-                <div className="spotlight-card bg-white rounded-xl border border-carbon-200 border-l-4 p-5 h-full transition-all duration-300 hover:shadow-md hover:-translate-y-1 group" style={{ borderLeftColor: "#9ef01a" }}>
-                  <div className="text-2xl mb-3 group-hover:scale-110 transition-transform duration-200">{f.icon}</div>
-                  <p className="font-bold text-carbon-900 mb-1.5 text-sm">{f.title}</p>
-                  <p className="text-sm text-carbon-600 leading-relaxed">{f.text}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-            <AnimatedSection delay={FEATURES.length * 80}>
-              <div className="rounded-xl p-5 h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border-l-4"
-                style={{ background: "#111827", borderLeftColor: "#9ef01a", border: "1px solid #1f2937", borderLeftWidth: "4px" }}>
-                <div className="text-2xl mb-3">🚀</div>
-                <p className="font-black text-base mb-1.5"><AnimatedGradientText>8–10 Partner Slots Only</AnimatedGradientText></p>
-                <p className="text-sm leading-relaxed" style={{ color: "#9ca3af" }}>We work with a select group per edition to guarantee real visibility — not a crowded sponsorship list.</p>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      {/* DIRECTIONS — Section 04 */}
-      <section id="directions" className="slide-section py-14 border-b border-carbon-100 bg-white">
-        <span className="slide-number">04 / 18</span>
-        <div className="wrap">
-          <AnimatedSection>
-            <Badge variant="success" className="mb-3">Two Directions</Badge>
-            <h2 className="font-black text-carbon-900 mb-8" style={{ fontSize: "clamp(20px, 2.8vw, 36px)", letterSpacing: "-0.8px", lineHeight: 1.1 }}>Inbound & Outbound US Mobility</h2>
-          </AnimatedSection>
-          <div className="flex flex-col gap-4">
-            <AnimatedSection delay={80}>
-              <div className="rounded-xl border border-carbon-200 bg-white p-6 hover:shadow-md transition-all duration-300" style={{ borderLeft: "4px solid #9ef01a" }}>
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-2xl font-black" style={{ color: "#9ef01a" }}>→</span>
-                  <h3 className="font-black text-carbon-900" style={{ fontSize: "clamp(17px, 1.8vw, 22px)", letterSpacing: "-0.3px" }}>🌍 Outbound Mobility</h3>
-                </div>
-                <p className="text-carbon-600 leading-relaxed mb-4 text-sm" style={{ maxWidth: 760 }}>
-                  Americans seeking legitimate ways to reduce their tax exposure, obtain a <strong className="text-carbon-900">Plan B, or renounce citizenship.</strong> Focus on <strong className="text-carbon-900">CBI/RBI Programs (Caribbean), European Residency, Tax-Advantaged Residency (LATAM)</strong>
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {["Caribbean CBI", "European Residency", "LATAM", "Tax Residency", "Second Passport"].map((t, i) => (
-                    <Badge key={i} variant="success" className="text-xs">{t}</Badge>
-                  ))}
-                </div>
-              </div>
-            </AnimatedSection>
-            <AnimatedSection delay={150}>
-              <div className="rounded-xl border border-carbon-200 bg-white p-6 hover:shadow-md transition-all duration-300" style={{ borderLeft: "4px solid #111827" }}>
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-2xl font-black text-carbon-300">←</span>
-                  <h3 className="font-black text-carbon-900" style={{ fontSize: "clamp(17px, 1.8vw, 22px)", letterSpacing: "-0.3px" }}>🇺🇸 Inbound Mobility</h3>
-                </div>
-                <p className="text-carbon-600 leading-relaxed mb-4 text-sm" style={{ maxWidth: 760 }}>
-                  HNWI from <strong className="text-carbon-900">India, China, and Southeast Asia</strong> seeking U.S. residency/visas for capital protection. Focus on <strong className="text-carbon-900">EB-5, E-2 Investment Visas</strong>
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {["EB-5 Visa", "E-2 Treaty", "India", "SE Asia", "China"].map((t, i) => (
-                    <Badge key={i} variant="outline" className="text-xs">{t}</Badge>
-                  ))}
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
-
-      {/* KEY TOPICS — Section 05 */}
-      <section id="topics" className="slide-section py-14 border-b border-carbon-100" style={{ background: "#f8fff0" }}>
-        <span className="slide-number">05 / 18</span>
-        <div className="wrap">
-          <AnimatedSection>
-            <Badge variant="success" className="mb-3">Agenda Themes</Badge>
-            <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-8" style={{ letterSpacing: "-0.5px" }}>Key Topics To Discuss</h2>
-          </AnimatedSection>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {TOPICS.map((t, i) => (
-              <AnimatedSection key={i} delay={i * 55}>
-                <div className="spotlight-card bg-white rounded-xl border border-carbon-200 p-5 hover:shadow-sm hover:border-lime-300 hover:-translate-y-0.5 transition-all duration-200 h-full group">
-                  <div className="flex items-start gap-3">
-                    <span className="text-2xl flex-shrink-0 group-hover:scale-110 transition-transform duration-200 mt-0.5">{t.icon}</span>
-                    <div>
-                      <p className="font-bold text-carbon-900 mb-1.5 text-sm leading-snug">{t.title}</p>
-                      <p className="text-xs text-carbon-500 leading-relaxed">{t.text}</p>
-                    </div>
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* NUMBERS — Section 06 — REMOVED as requested */}
     </>
   );
 }
