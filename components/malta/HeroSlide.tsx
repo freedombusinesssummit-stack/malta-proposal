@@ -43,7 +43,7 @@ export default function HeroSlide() {
     <section id="hero" className="slide-section pt-14 bg-white overflow-x-hidden">
       <span className="slide-number">01 / 18</span>
 
-      <div className="wrap">
+      <div style={{ maxWidth: "1080px", margin: "0 auto", paddingLeft: "24px", paddingRight: "24px" }}>
         <div className="py-10 md:py-14">
 
           {/* Pills */}

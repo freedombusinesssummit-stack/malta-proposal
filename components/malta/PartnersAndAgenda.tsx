@@ -141,7 +141,7 @@ export default function PartnersAndAgenda() {
           <AnimatedSection>
             <Badge variant="success" className="mb-3">Summit Agenda</Badge>
             <h2 className="text-3xl font-black text-carbon-900 tracking-tight mb-2">23–24 June 2026</h2>
-            <p className="text-carbon-500 mb-8">In-Person · Valletta, Malta · Government Entities on Day 1 · Commercial Agents on Day 2</p>
+            <p className="text-carbon-500 mb-8">Virtual Summit · Government Entities on Day 1 · Commercial Agents on Day 2</p>
           </AnimatedSection>
 
           <AnimatedSection delay={100}>

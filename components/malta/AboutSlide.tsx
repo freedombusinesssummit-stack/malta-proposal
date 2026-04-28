@@ -43,10 +43,7 @@ export default function AboutSlide() {
               What is FBS Malta Edition?
             </h2>
             <p className="text-carbon-600 text-base md:text-lg mb-6 leading-relaxed max-w-3xl">
-              FBS Malta Edition is a two-day in-person summit at the intersection of investment migration,
-              EU corporate structuring, and global mobility. Held in Valletta — the EU&apos;s smallest capital
-              with outsized strategic significance — convening HNWIs, founders, and service providers around
-              Malta&apos;s unique proposition as a gateway jurisdiction.
+              FBS Malta Edition is a two-day virtual summit at the intersection of investment migration, EU corporate structuring, and global mobility — convening HNWIs, founders, and service providers around Malta&apos;s unique proposition as a premier EU gateway jurisdiction.
             </p>
             <p className="text-carbon-500 text-sm mb-8 leading-relaxed">
               <strong className="text-carbon-800">Day 1</strong> features government entities on stage. {" "}
@@ -82,7 +79,7 @@ export default function AboutSlide() {
             </h2>
             <p className="text-carbon-600 text-base max-w-2xl mb-6 leading-relaxed">
               FBS Malta is the only private summit produced in direct collaboration with Malta&apos;s official Residency Agency.
-              This gives commercial partners co-branding alongside a government authority — an unmatched trust signal
+              Giving our commercial partners an unmatched trust signal
               for HNWI prospects evaluating Malta&apos;s residency and citizenship programmes.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
