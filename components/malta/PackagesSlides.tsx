@@ -6,7 +6,7 @@ import { BorderBeam } from "@/components/magicui/border-beam";
 import { AnimatedList } from "@/components/magicui/animated-list";
 import { AnimatedGradientText } from "@/components/magicui/animated-gradient-text";
 
-function Check() { return <span className="font-bold text-xl" style={{ color: "#70e000" }}>✓</span>; }
+function Check() { return <span className="font-bold text-xl" style={{ color: "#2563eb" }}>✓</span>; }
 function Dash() { return <span className="text-carbon-300 text-lg">–</span>; }
 function Cell({ val }: { val: string }) {
   if (val === "✓") return <Check />;
@@ -94,7 +94,7 @@ export default function PackagesSlides() {
   return (
     <>
       {/* ENGAGEMENT FLOW */}
-      <section id="flow" className="slide-section py-14 border-b border-carbon-100" style={{ background: "#f8fff0" }}>
+      <section id="flow" className="slide-section py-14 border-b border-carbon-100" style={{ background: "#f8fafc" }}>
         <span className="slide-number">14 / 18</span>
         <div className="wrap">
           <AnimatedSection>
@@ -103,18 +103,18 @@ export default function PackagesSlides() {
             <p className="text-carbon-500 mb-10">A structured 8–12 week journey — from pre-event exposure to post-event lead delivery</p>
           </AnimatedSection>
           <div className="relative">
-            <div className="absolute left-5 top-8 bottom-8 w-0.5 hidden md:block" style={{ background: "linear-gradient(to bottom, #9ef01a, #70e000, rgba(158,240,26,0.15))" }} />
+            <div className="absolute left-5 top-8 bottom-8 w-0.5 hidden md:block" style={{ background: "linear-gradient(to bottom, #9ef01a, #2563eb, rgba(158,240,26,0.15))" }} />
             <AnimatedList delay={90} className="space-y-3">
               {FLOW.map((f, i) => (
                 <div key={i} className="spotlight-card relative flex items-start gap-4 p-4 rounded-xl transition-all duration-300 hover:-translate-y-1"
-                  style={{ background: f.green ? "#f8fff0" : "white", border: `1px solid ${f.green ? "#bfdbfe" : "#e5e7eb"}`, boxShadow: f.green ? "0 2px 16px rgba(158,240,26,0.08)" : "none" }}>
+                  style={{ background: f.green ? "#f8fafc" : "white", border: `1px solid ${f.green ? "#bfdbfe" : "#e5e7eb"}`, boxShadow: f.green ? "0 2px 16px rgba(158,240,26,0.08)" : "none" }}>
                   <div className="w-10 h-10 rounded-full flex items-center justify-center font-black text-sm flex-shrink-0 relative z-10"
                     style={{ background: f.green ? "#9ef01a" : "#f3f4f6", color: f.green ? "#111827" : "#6b7280" }}>
                     {i + 1}
                   </div>
                   <div className="flex-1 pt-1">
                     <div className="flex flex-wrap items-center gap-2 mb-1">
-                      <span className="font-black text-xl" style={{ color: f.green ? "#70e000" : "#d1d5db" }}>{f.dir}</span>
+                      <span className="font-black text-xl" style={{ color: f.green ? "#2563eb" : "#d1d5db" }}>{f.dir}</span>
                       <Badge variant={f.green ? "success" : "outline"} className="text-xs">{f.tag}</Badge>
                     </div>
                     <p className="text-carbon-700 font-medium text-sm">{f.label}</p>
@@ -138,7 +138,7 @@ export default function PackagesSlides() {
           </AnimatedSection>
 
           <AnimatedSection delay={80}>
-            <div className="rounded-xl p-5 mb-8" style={{ background: "#f8fff0", border: "1px solid #bfdbfe" }}>
+            <div className="rounded-xl p-5 mb-8" style={{ background: "#f8fafc", border: "1px solid #bfdbfe" }}>
               <p className="text-sm text-carbon-600 mb-1">Speakers & Partners don't invest into "Speaking Slot".</p>
               <p className="font-bold text-carbon-900">
                 You invest to get{" "}
@@ -176,7 +176,7 @@ export default function PackagesSlides() {
                     <p className="text-xs text-carbon-400 font-medium mb-1">Early Bird from</p>
                     <span className="text-3xl font-black text-carbon-900 tracking-tight">€1,550</span>
                   </div>
-                  <a href="mailto:denis@fsummit.net" className="inline-flex items-center px-4 py-2 rounded-lg text-sm font-semibold border border-carbon-200 text-carbon-700 hover:border-lime-300 transition-all">Claim Slot →</a>
+                  <a href="mailto:denis@fsummit.net" className="inline-flex items-center px-4 py-2 rounded-lg text-sm font-semibold border border-carbon-200 text-carbon-700 hover:border-blue-200 transition-all">Claim Slot →</a>
                 </div>
               </div>
             </AnimatedSection>
@@ -184,7 +184,7 @@ export default function PackagesSlides() {
 
           {/* CTA block — NO button */}
           <AnimatedSection delay={250}>
-            <div className="rounded-2xl p-8 md:p-10 text-center" style={{ background: "#f8fff0", border: "2px solid #bfdbfe" }}>
+            <div className="rounded-2xl p-8 md:p-10 text-center" style={{ background: "#f8fafc", border: "2px solid #bfdbfe" }}>
               <p className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "#3d8000" }}>Ready to Reach This Audience?</p>
               <h2 className="font-black text-carbon-900 leading-tight mb-3" style={{ fontSize: "clamp(28px, 4vw, 44px)", letterSpacing: "-1px" }}>
                 Speaking &{" "}
@@ -219,7 +219,7 @@ export default function PackagesSlides() {
                   { icon: "📋", text: "Audience surveyed on jurisdiction, budget & timeline" },
                   { icon: "✅", text: "8–10 selected partners per event — no overcrowding" },
                 ].map((r, i) => (
-                  <div key={i} className="flex items-start gap-3 p-3.5 rounded-xl border border-carbon-200 bg-carbon-50 hover:border-lime-300 hover:bg-lime-50 transition-all duration-200 group">
+                  <div key={i} className="flex items-start gap-3 p-3.5 rounded-xl border border-carbon-200 bg-carbon-50 hover:border-blue-200 hover:bg-blue-50 transition-all duration-200 group">
                     <span className="text-lg flex-shrink-0 group-hover:scale-110 transition-transform">{r.icon}</span>
                     <p className="text-xs text-carbon-700 font-semibold leading-snug">{r.text}</p>
                   </div>
@@ -231,7 +231,7 @@ export default function PackagesSlides() {
       </section>
 
       {/* PRICING — BRAND INTEGRATION */}
-      <section id="pricing-brand" className="slide-section py-14 border-b border-carbon-100" style={{ background: "#f8fff0" }}>
+      <section id="pricing-brand" className="slide-section py-14 border-b border-carbon-100" style={{ background: "#f8fafc" }}>
         <span className="slide-number">16 / 18</span>
         <div className="wrap">
           <AnimatedSection>
@@ -279,7 +279,7 @@ export default function PackagesSlides() {
                 <p className="text-xs font-bold text-carbon-400 uppercase tracking-widest mb-2">STRATEGIC · Early Bird</p>
                 <span className="text-4xl font-black text-carbon-900 tracking-tight">€4,950</span>
                 <p className="text-xs text-carbon-400 mt-1 mb-4">Standard (May 20th): <span className="line-through">€5,950</span></p>
-                <a href="mailto:denis@fsummit.net" className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-bold border border-carbon-200 text-carbon-700 hover:border-lime-300 hover:text-carbon-900 transition-all">Claim Strategic Slot →</a>
+                <a href="mailto:denis@fsummit.net" className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-bold border border-carbon-200 text-carbon-700 hover:border-blue-200 hover:text-carbon-900 transition-all">Claim Strategic Slot →</a>
               </div>
             </div>
           </AnimatedSection>
@@ -287,7 +287,7 @@ export default function PackagesSlides() {
       </section>
 
       {/* PRICING — SPEAKING */}
-      <section id="pricing-speaking" className="slide-section py-14 border-b border-carbon-100" style={{ background: "#f8fff0" }}>
+      <section id="pricing-speaking" className="slide-section py-14 border-b border-carbon-100" style={{ background: "#f8fafc" }}>
         <span className="slide-number">17 / 18</span>
         <div className="wrap">
           <AnimatedSection>
@@ -329,7 +329,7 @@ export default function PackagesSlides() {
               </table>
             </div>
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="relative bento-card p-6 overflow-hidden" style={{ border: "2px solid #9ef01a", background: "#f8fff0" }}>
+              <div className="relative bento-card p-6 overflow-hidden" style={{ border: "2px solid #9ef01a", background: "#f8fafc" }}>
                 <BorderBeam size={120} duration={10} colorFrom="#9ef01a" colorTo="#4ade80" borderWidth={2} />
                 <div className="flex items-center justify-between mb-2">
                   <p className="text-xs font-bold text-carbon-400 uppercase tracking-widest">PREMIUM · Early Bird</p>
@@ -343,7 +343,7 @@ export default function PackagesSlides() {
                 <p className="text-xs font-bold text-carbon-400 uppercase tracking-widest mb-2">BUSINESS · Early Bird</p>
                 <span className="text-4xl font-black text-carbon-900 tracking-tight">€1,550</span>
                 <p className="text-xs text-carbon-400 mt-1 mb-4">Standard (May 20th): <span className="line-through">€1,950</span></p>
-                <a href="mailto:denis@fsummit.net" className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-bold border border-carbon-200 text-carbon-700 hover:border-lime-300 hover:text-carbon-900 transition-all">Claim Business Slot →</a>
+                <a href="mailto:denis@fsummit.net" className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-bold border border-carbon-200 text-carbon-700 hover:border-blue-200 hover:text-carbon-900 transition-all">Claim Business Slot →</a>
               </div>
             </div>
           </AnimatedSection>

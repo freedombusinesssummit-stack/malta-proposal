@@ -65,7 +65,7 @@ export default function PartnersAndAgenda() {
           <div className="space-y-2">
             {FLOW_STEPS.map((s, i) => (
               <AnimatedSection key={i} delay={i * 60}>
-                <div className="flex items-center gap-4 rounded-xl border border-carbon-100 bg-white p-4 hover:border-lime-200 hover:shadow-sm transition-all">
+                <div className="flex items-center gap-4 rounded-xl border border-carbon-100 bg-white p-4 hover:border-blue-200 hover:shadow-sm transition-all">
                   <div className="w-9 h-9 rounded-lg flex items-center justify-center font-black text-sm flex-shrink-0" style={{ background: "#9ef01a", color: "#111827" }}>
                     {s.n}
                   </div>
@@ -97,7 +97,7 @@ export default function PartnersAndAgenda() {
             <div className="relative overflow-hidden mb-8">
               <div className="flex gap-2 flex-wrap mb-2">
                 {PARTNERS.map((p, i) => (
-                  <span key={i} className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border border-carbon-200 text-carbon-700 bg-white hover:border-lime-300 transition-colors cursor-default">
+                  <span key={i} className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border border-carbon-200 text-carbon-700 bg-white hover:border-blue-200 transition-colors cursor-default">
                     {p}
                   </span>
                 ))}
@@ -158,7 +158,7 @@ export default function PartnersAndAgenda() {
               <TabsContent value="day1">
                 <div className="space-y-2">
                   {DAY1.map((s, i) => (
-                    <div key={i} className="flex items-start gap-4 rounded-xl border border-carbon-200 p-4 hover:border-lime-200 hover:bg-lime-50 transition-all">
+                    <div key={i} className="flex items-start gap-4 rounded-xl border border-carbon-200 p-4 hover:border-blue-200 hover:bg-blue-50 transition-all">
                       <span className="font-black text-3xl text-carbon-100 flex-shrink-0 leading-none w-10">{s.num}</span>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1">
@@ -176,12 +176,12 @@ export default function PartnersAndAgenda() {
               <TabsContent value="day2">
                 <div className="space-y-2">
                   {DAY2.map((s, i) => (
-                    <div key={i} className="flex items-start gap-4 rounded-xl border border-carbon-200 p-4 hover:border-lime-200 hover:bg-lime-50 transition-all">
+                    <div key={i} className="flex items-start gap-4 rounded-xl border border-carbon-200 p-4 hover:border-blue-200 hover:bg-blue-50 transition-all">
                       <span className="font-black text-3xl text-carbon-100 flex-shrink-0 leading-none w-10">{s.num}</span>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1">
                           <p className="text-xs font-bold uppercase tracking-widest text-blue-600">{s.org}</p>
-                          <span className="text-xs px-2 py-0.5 rounded font-bold bg-lime-50 text-blue-700 border border-lime-200">🏢 COMMERCIAL</span>
+                          <span className="text-xs px-2 py-0.5 rounded font-bold bg-blue-50 text-blue-700 border border-blue-200">🏢 COMMERCIAL</span>
                         </div>
                         <p className="font-black text-carbon-900 text-base leading-snug">{s.title}</p>
                         <p className="text-sm text-carbon-500 mt-1">{s.desc}</p>

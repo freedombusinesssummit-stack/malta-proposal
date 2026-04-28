@@ -61,7 +61,7 @@ export default function Navigation() {
               { id: "pricing-brand", label: "Pricing" },
             ].map(l => (
               <button key={l.id} onClick={() => go(l.id)}
-                className={`text-sm font-medium transition-colors ${active === l.id ? "text-lime-500" : "text-carbon-500 hover:text-carbon-800"}`}>
+                className={`text-sm font-medium transition-colors ${active === l.id ? "text-blue-600" : "text-carbon-500 hover:text-carbon-800"}`}>
                 {l.label}
               </button>
             ))}
@@ -81,7 +81,7 @@ export default function Navigation() {
             {/* View Packages - large screens */}
             <button
               onClick={() => go("pricing-brand")}
-              className="hidden lg:flex items-center justify-center h-9 px-4 rounded-lg text-sm font-semibold border border-carbon-200 text-carbon-700 hover:border-lime-300 hover:text-carbon-900 transition-all whitespace-nowrap"
+              className="hidden lg:flex items-center justify-center h-9 px-4 rounded-lg text-sm font-semibold border border-carbon-200 text-carbon-700 hover:border-blue-200 hover:text-carbon-900 transition-all whitespace-nowrap"
             >
               View Packages
             </button>
@@ -113,7 +113,7 @@ export default function Navigation() {
         <div className="lg:hidden border-t border-carbon-100 bg-white py-2">
           {SLIDES.map(s => (
             <button key={s.id} onClick={() => go(s.id)}
-              className={`w-full text-left px-6 py-2.5 text-sm font-medium transition-colors ${active === s.id ? "text-lime-500 bg-lime-50" : "text-carbon-600 hover:bg-carbon-50"}`}>
+              className={`w-full text-left px-6 py-2.5 text-sm font-medium transition-colors ${active === s.id ? "text-lime-500 bg-blue-50" : "text-carbon-600 hover:bg-carbon-50"}`}>
               {s.label}
             </button>
           ))}

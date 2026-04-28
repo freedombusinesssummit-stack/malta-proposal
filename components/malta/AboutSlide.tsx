@@ -42,7 +42,7 @@ export default function AboutSlide() {
             <h2 className="text-3xl md:text-4xl font-black text-carbon-900 leading-tight mb-6">
               What is FBS Malta Edition?
             </h2>
-            <p className="text-carbon-600 text-base md:text-lg mb-4 leading-relaxed">
+            <p className="text-carbon-600 text-base md:text-lg mb-6 leading-relaxed max-w-3xl">
               FBS Malta Edition is a two-day in-person summit at the intersection of investment migration,
               EU corporate structuring, and global mobility. Held in Valletta — the EU&apos;s smallest capital
               with outsized strategic significance — convening HNWIs, founders, and service providers around
@@ -52,7 +52,7 @@ export default function AboutSlide() {
               <strong className="text-carbon-800">Day 1</strong> features government entities on stage. {" "}
               <strong className="text-carbon-800">Day 2</strong> features commercial agents — lawyers, tax advisors, iGaming specialists, and Fintech experts.
               Produced in official collaboration with{" "}
-              <strong className="text-blue-600">Residency Malta Agency</strong>.
+              <strong className="text-blue-700 font-bold">Residency Malta Agency</strong>.
             </p>
           </AnimatedSection>
 
@@ -72,13 +72,13 @@ export default function AboutSlide() {
         </div>
       </section>
 
-      <section id="partnership" className="slide-section" style={{ background: "#f0fdf4", borderTop: "1px solid #d1fae5" }}>
+      <section id="partnership" className="slide-section" style={{ background: "#eff6ff", borderTop: "1px solid #bfdbfe" }}>
         <span className="slide-number">03 / 18</span>
         <div className="wrap py-16 md:py-20">
           <AnimatedSection className="anim">
             <p className="section-label">Official Government Partnership</p>
             <h2 className="text-3xl md:text-4xl font-black text-carbon-900 leading-tight mb-4">
-              Produced in Collaboration with <span className="text-blue-600">Residency Malta Agency</span>
+              Produced in Collaboration with <span className="text-blue-700 font-bold">Residency Malta Agency</span>
             </h2>
             <p className="text-carbon-600 text-base max-w-2xl mb-6 leading-relaxed">
               FBS Malta is the only private summit produced in direct collaboration with Malta&apos;s official Residency Agency.
@@ -92,7 +92,7 @@ export default function AboutSlide() {
                 { icon: "💰", label: "Finance Malta", sub: "Capital Markets Authority" },
                 { icon: "🚀", label: "Malta Venture Capital", sub: "Startup Ecosystem Fund" },
               ].map((p, i) => (
-                <div key={i} className="card-green flex flex-col items-center text-center py-4">
+                <div key={i} className="card-blue flex flex-col items-center text-center py-4">
                   <span className="text-2xl mb-2">{p.icon}</span>
                   <p className="text-sm font-bold text-carbon-800 mb-1">{p.label}</p>
                   <p className="text-xs text-carbon-500">{p.sub}</p>
@@ -129,7 +129,7 @@ export default function AboutSlide() {
             <h3 className="text-xl font-black text-carbon-900 mb-5">8 Sessions Across 2 Days</h3>
             <div className="grid sm:grid-cols-2 gap-3">
               {TOPICS.map((t, i) => (
-                <div key={i} className="card hover:border-lime-200 transition-colors">
+                <div key={i} className="card hover:border-blue-200 transition-colors">
                   <div className="flex items-start gap-3">
                     <span className="text-xl mt-0.5 flex-shrink-0">{t.icon}</span>
                     <div>

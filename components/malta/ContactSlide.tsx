@@ -132,7 +132,7 @@ export default function ContactSlide() {
 
         {/* Website */}
         <AnimatedSection delay={250}>
-          <div className="rounded-xl p-5 flex items-center justify-between" style={{ background: "#f8fff0", border: "1px solid #bfdbfe" }}>
+          <div className="rounded-xl p-5 flex items-center justify-between" style={{ background: "#f8fafc", border: "1px solid #bfdbfe" }}>
             <div>
               <p className="text-xs text-carbon-500 font-medium mb-0.5">Website</p>
               <p className="font-bold text-carbon-900">maltaedition.fsummit.net</p>

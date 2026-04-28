@@ -22,7 +22,7 @@
 @layer components {
   /* Layout */
   .wrap {
-    max-width: 1200px;
+    max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
@@ -90,7 +90,7 @@
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    background: #f0fdf4;
+    background: #eff6ff;
     color: #16a34a;
     border: 1px solid #86efac;
   }
@@ -115,7 +115,7 @@
   }
   .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #9ef01a, #70e000);
+    background: linear-gradient(90deg, #9ef01a, #2563eb);
     border-radius: 999px;
   }
 
@@ -204,7 +204,7 @@
     transition: all 0.2s;
   }
   .feature-card:hover {
-    border-left-color: #70e000;
+    border-left-color: #2563eb;
     box-shadow: 0 4px 20px rgba(158, 240, 26, 0.12);
     transform: translateY(-2px);
   }
@@ -274,7 +274,7 @@
 
 /* Gradient text */
 .gradient-text {
-  background: linear-gradient(135deg, #9ef01a 0%, #70e000 50%, #4ade80 100%);
+  background: linear-gradient(135deg, #9ef01a 0%, #2563eb 50%, #4ade80 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

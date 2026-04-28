@@ -48,7 +48,7 @@ export default function HeroSlide() {
 
           {/* Pills */}
           <div className="flex flex-wrap gap-2 mb-5" style={fade(0)}>
-            {["23-24 June 2026", "In-Person Event", "Valletta, Malta 🇲🇹"].map((t, i) => (
+            {["23-24 June 2026", "Virtual Event", "Worldwide Online 🌐"].map((t, i) => (
               <span key={i} className="pill">{t}</span>
             ))}
           </div>
@@ -58,7 +58,7 @@ export default function HeroSlide() {
             <h1 className="font-black text-carbon-900 leading-tight mb-1 w-full" style={{ fontSize: "clamp(22px, 4vw, 48px)", letterSpacing: "-1.5px" }}>
               Freedom Business Summit 2026
             </h1>
-            <h2 className="font-black text-carbon-900 leading-none mb-4 w-full" style={{ fontSize: "clamp(28px, 5.5vw, 62px)", letterSpacing: "-2px", whiteSpace: "nowrap" }}>
+            <h2 className="font-black text-carbon-900 leading-none mb-4 w-full" style={{ fontSize: "clamp(28px, 5.5vw, 62px)", letterSpacing: "-2px" }}>
               Malta Edition 🇲🇹
             </h2>
             <p className="font-semibold text-carbon-600 leading-snug mb-5 w-full" style={{ fontSize: "clamp(14px, 1.8vw, 20px)" }}>
@@ -80,7 +80,7 @@ export default function HeroSlide() {
 
           {/* Government partnership badge */}
           <div className="mb-5" style={fade(260)}>
-            <div className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl border border-lime-200 bg-lime-50">
+            <div className="inline-flex items-center gap-2.5 px-4 py-2.5 rounded-xl border border-blue-200 bg-blue-50">
               <span className="text-lg">🏛️</span>
               <div>
                 <p className="text-xs font-bold text-blue-700 uppercase tracking-wide">Official Government Partnership</p>
@@ -91,7 +91,7 @@ export default function HeroSlide() {
 
           <div className="mb-4" style={fade(300)}>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold" style={{ background: "#111827", color: "#9ef01a" }}>
-              <span className="w-2 h-2 rounded-full bg-lime-300 animate-pulse flex-shrink-0" />
+              <span className="w-2 h-2 rounded-full bg-red-400 animate-pulse flex-shrink-0" />
               Get Early Bird Access! Act Fast
             </span>
           </div>
@@ -103,7 +103,7 @@ export default function HeroSlide() {
               Partner With Us →
             </ShimmerButton>
             <button onClick={() => document.getElementById("pricing-brand")?.scrollIntoView({ behavior: "smooth" })}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-carbon-700 border border-carbon-200 hover:border-lime-300 hover:text-carbon-900 transition-all bg-white">
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-carbon-700 border border-carbon-200 hover:border-blue-200 hover:text-carbon-900 transition-all bg-white">
               View Packages
             </button>
           </div>

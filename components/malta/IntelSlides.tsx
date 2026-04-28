@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import AnimatedSection from "@/components/AnimatedSection";
 
-const G = { green: '#8FD600', greenMid: '#C8F000', gray: '#6B7280', border: '#E5E7EB', light: '#F7F7F5' };
+const G = { green: '#3b82f6', greenMid: '#60a5fa', gray: '#6B7280', border: '#E5E7EB', light: '#F7F7F5' };
 
 const funnelSteps = [
   { num: "01", label: "Traffic", desc: "Targeted video & static ads by geo, income bracket, mobility intent.", color: G.green },
@@ -70,7 +70,7 @@ export default function IntelSlides() {
 
           {/* Playbook banner */}
           <AnimatedSection delay={400}>
-            <div className="rounded-xl border overflow-hidden" style={{ borderColor: '#bfdbfe', background: 'linear-gradient(135deg, #eff6ff, #f8fff0)' }}>
+            <div className="rounded-xl border overflow-hidden" style={{ borderColor: '#bfdbfe', background: 'linear-gradient(135deg, #eff6ff, #f8fafc)' }}>
               <div className="p-5 sm:p-6">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
                   <div className="flex-1">
@@ -142,7 +142,7 @@ export default function IntelSlides() {
               <span>·</span>
               <span>✓ Email + WhatsApp included</span>
               <span>·</span>
-              <span className="inline-flex items-center gap-1 px-2 py-1 rounded bg-lime-50 text-blue-700 border border-lime-200 font-semibold text-xs">
+              <span className="inline-flex items-center gap-1 px-2 py-1 rounded bg-blue-50 text-blue-700 border border-blue-200 font-semibold text-xs">
                 ☑ Consent · GDPR
               </span>
             </div>

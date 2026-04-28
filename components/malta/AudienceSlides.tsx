@@ -52,7 +52,7 @@ export default function AudienceSlides() {
 
           <div className="grid md:grid-cols-2 gap-4 mb-6">
             <AnimatedSection delay={80}>
-              <div className="spotlight-card rounded-xl p-6 border transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 h-full" style={{ borderTop: "4px solid #9ef01a", borderLeft: "1px solid #e5e7eb", borderRight: "1px solid #e5e7eb", borderBottom: "1px solid #e5e7eb", background: "#f8fff0" }}>
+              <div className="spotlight-card rounded-xl p-6 border transition-all duration-300 hover:shadow-md hover:-translate-y-0.5 h-full" style={{ borderTop: "4px solid #9ef01a", borderLeft: "1px solid #e5e7eb", borderRight: "1px solid #e5e7eb", borderBottom: "1px solid #e5e7eb", background: "#f8fafc" }}>
                 <div className="text-4xl font-black mb-2 gradient-text">60%</div>
                 <p className="font-bold text-carbon-900 mb-1">B2C Clients</p>
                 <p className="text-sm text-carbon-600">HNWIs, entrepreneurs, investors, and families seeking Malta residency, EU access, and investment</p>
@@ -70,7 +70,7 @@ export default function AudienceSlides() {
           <div className="grid md:grid-cols-2 gap-4 mb-6">
             <AnimatedSection delay={180}>
               <div className="rounded-xl border border-carbon-200 bg-white p-5">
-                <p className="text-xs font-bold text-lime-400 uppercase tracking-widest mb-4">Individuals</p>
+                <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-4">Individuals</p>
                 {["HNWIs / Investors", "Digital Entrepreneurs / Consultants", "Relocating Families", "iGaming / Fintech Founders"].map((a, i) => (
                   <div key={i} className="flex items-center gap-2.5 py-2 border-b border-carbon-100 last:border-0 group">
                     <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 group-hover:scale-150 transition-transform" style={{ background: "#9ef01a" }} />
@@ -81,7 +81,7 @@ export default function AudienceSlides() {
             </AnimatedSection>
             <AnimatedSection delay={220}>
               <div className="rounded-xl border border-carbon-200 bg-white p-5">
-                <p className="text-xs font-bold text-lime-400 uppercase tracking-widest mb-4">Service Providers</p>
+                <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-4">Service Providers</p>
                 {["Legal, Tax, Banking, Residency", "Real Estate Developers & Agencies", "iGaming & Fintech Firms", "Investment Companies & Family Offices"].map((a, i) => (
                   <div key={i} className="flex items-center gap-2.5 py-2 border-b border-carbon-100 last:border-0 group">
                     <span className="w-1.5 h-1.5 rounded-full flex-shrink-0 group-hover:scale-150 transition-transform" style={{ background: "#6b7280" }} />
@@ -94,7 +94,7 @@ export default function AudienceSlides() {
 
           <AnimatedSection delay={260}>
             <div className="rounded-xl border border-carbon-100 bg-carbon-50 p-5">
-              <p className="text-xs font-bold text-lime-400 uppercase tracking-widest mb-3">Industry Breakdown</p>
+              <p className="text-xs font-bold text-blue-400 uppercase tracking-widest mb-3">Industry Breakdown</p>
               <div className="flex flex-wrap gap-2">
                 {[
                   { label: "Finance & Legal", pct: "28%" },
@@ -145,7 +145,7 @@ export default function AudienceSlides() {
           </div>
 
           <AnimatedSection delay={400}>
-            <div className="rounded-xl p-5 border" style={{ background: "linear-gradient(135deg, #f8fff0, #f0fdf4)", borderColor: "#bfdbfe" }}>
+            <div className="rounded-xl p-5 border" style={{ background: "linear-gradient(135deg, #f8fafc, #eff6ff)", borderColor: "#bfdbfe" }}>
               <p className="text-sm font-bold text-carbon-800 mb-1">Key Takeaway</p>
               <p className="text-sm text-carbon-600">
                 Founder-heavy audience — over <strong className="text-blue-600">75% are entrepreneurs or senior executives</strong> with direct authority over investment, residency, and structuring decisions.
@@ -183,7 +183,7 @@ export default function AudienceSlides() {
           </div>
 
           <AnimatedSection delay={500}>
-            <div className="mt-6 rounded-xl p-4 border border-lime-200 bg-lime-50">
+            <div className="mt-6 rounded-xl p-4 border border-blue-200 bg-blue-50">
               <p className="text-sm font-bold text-carbon-800">Takeaway</p>
               <p className="text-sm text-carbon-600 mt-1">
                 Malta-first mindset — <strong className="text-blue-600">72% want residency or citizenship</strong> options.{" "}
