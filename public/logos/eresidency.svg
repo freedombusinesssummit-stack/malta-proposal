@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="36" viewBox="0 0 160 36">
+  <rect width="160" height="36" fill="none"/>
+  <rect x="0" y="4" width="28" height="28" rx="4" fill="#0f172a"/>
+  <text x="4" y="22" font-family="Arial,sans-serif" font-weight="900" font-size="11" fill="#8FD600">e-R</text>
+  <text x="34" y="23" font-family="Arial,sans-serif" font-weight="700" font-size="12" fill="#1e293b">e-Residency</text>
+</svg>

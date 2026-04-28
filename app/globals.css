@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #ffffff;
+    color: #111827;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar { width: 3px; }
+  ::-webkit-scrollbar-track { background: #f1f5f9; }
+  ::-webkit-scrollbar-thumb { background: #9ef01a; border-radius: 2px; }
+}
+
+@layer components {
+  /* Layout */
+  .wrap {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: 640px) {
+    .wrap {
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+  }
+
+  /* Cards */
+  .card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .card-muted {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .card-green {
+    background: #f3ffe3;
+    border: 1px solid #b5f55a;
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  /* Pill badge — dark with lime text like screenshot */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    background: #111827;
+    color: #9ef01a;
+    border: none;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 640px) {
+    .pill {
+      padding: 5px 12px;
+      font-size: 12px;
+    }
+  }
+
+  /* Green badge (subtle) */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: #f0fdf4;
+    color: #16a34a;
+    border: 1px solid #86efac;
+  }
+
+  /* Section label */
+  .section-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #16a34a;
+    margin-bottom: 8px;
+  }
+
+  /* Progress */
+  .progress-track {
+    height: 6px;
+    background: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #9ef01a, #70e000);
+    border-radius: 999px;
+  }
+
+  /* Buttons */
+  .btn-green {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 20px;
+    background: #9ef01a;
+    color: #111827;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.15s;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .btn-green:hover { background: #80cc10; transform: translateY(-1px); }
+
+  .btn-dark {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 20px;
+    background: #111827;
+    color: #9ef01a;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.15s;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .btn-dark:hover { background: #1f2937; transform: translateY(-1px); }
+
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 11px 20px;
+    background: white;
+    color: #374151;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #e5e7eb;
+    transition: all 0.15s;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .btn-outline:hover { border-color: #9ef01a; color: #111827; }
+
+  /* Animate in */
+  .anim {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.55s ease, transform 0.55s ease;
+  }
+  .anim.in {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* MagicUI shimmer border effect */
+  .shimmer-border {
+    position: relative;
+    border-radius: 12px;
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(135deg, #9ef01a, #38bdf8, #9ef01a) border-box;
+    border: 2px solid transparent;
+  }
+
+  /* Feature card with lime left border */
+  .feature-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid #9ef01a;
+    border-radius: 12px;
+    padding: 20px 24px;
+    transition: all 0.2s;
+  }
+  .feature-card:hover {
+    border-left-color: #70e000;
+    box-shadow: 0 4px 20px rgba(158, 240, 26, 0.12);
+    transform: translateY(-2px);
+  }
+
+  /* Glow effect */
+  .lime-glow {
+    box-shadow: 0 0 0 1px rgba(158, 240, 26, 0.3),
+                0 4px 24px rgba(158, 240, 26, 0.2);
+  }
+}
+
+/* shadcn CSS variables */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --primary: 84 98% 53%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+  --radius: 0.75rem;
+}
+
+/* Number ticker animation */
+@keyframes ticker-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Shimmer animation for cards */
+@keyframes shimmer-move {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.shimmer-card {
+  background: linear-gradient(135deg,
+    rgba(158,240,26,0) 0%,
+    rgba(158,240,26,0.06) 50%,
+    rgba(158,240,26,0) 100%
+  ) no-repeat;
+  background-size: 200% 100%;
+  animation: shimmer-move 3s linear infinite;
+}
+
+/* Glow pulse for lime elements */
+@keyframes lime-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(158,240,26,0.3); }
+  50% { box-shadow: 0 0 0 8px rgba(158,240,26,0); }
+}
+.lime-pulse { animation: lime-pulse 2s ease-in-out infinite; }
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+.float-anim { animation: float 3s ease-in-out infinite; }
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #9ef01a 0%, #70e000 50%, #4ade80 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated underline */
+.animated-underline {
+  position: relative;
+}
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #9ef01a;
+  transition: width 0.3s ease;
+}
+.animated-underline:hover::after { width: 100%; }
+
+/* Spotlight effect on cards */
+.spotlight-card {
+  position: relative;
+  overflow: hidden;
+}
+.spotlight-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(158,240,26,0.08), transparent 40%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  z-index: 0;
+}
+.spotlight-card:hover::before { opacity: 1; }
+
+/* MagicUI Animations */
+@keyframes gradient-shift {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes shimmer-sweep {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@keyframes border-beam-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fade-up-stagger {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Bento grid card shimmer on hover */
+.bento-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.bento-card:hover {
+  border-color: rgba(158, 240, 26, 0.4);
+  box-shadow: 0 8px 30px rgba(158, 240, 26, 0.1);
+  transform: translateY(-3px);
+}
+.bento-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(158,240,26,0) 0%, rgba(158,240,26,0.04) 50%, rgba(158,240,26,0) 100%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.bento-card:hover::after { opacity: 1; }
+
+/* Animate gradient text */
+.animate-gradient {
+  background-size: 200% auto;
+  animation: gradient-shift 4s linear infinite;
+}
+
+/* ===================== PRESENTATION MODE ===================== */
+/* Full-screen sections */
+.slide-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+/* Section number badge */
+.slide-number {
+  position: absolute;
+  top: 80px;
+  right: 28px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #d1d5db;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 768px) {
+  .slide-section {
+    min-height: auto;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+  .slide-number { display: none; }
+}
