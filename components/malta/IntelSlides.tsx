@@ -101,32 +101,56 @@ export default function IntelSlides() {
           </AnimatedSection>
 
           <AnimatedSection delay={100}>
-            <div className="rounded-xl border border-carbon-200 overflow-hidden mb-6">
-              {/* Table header */}
+            {/* Desktop table */}
+            <div className="hidden md:block rounded-xl border border-carbon-200 overflow-hidden mb-6">
               <div className="grid text-xs font-bold uppercase tracking-widest text-carbon-400 bg-carbon-50 border-b border-carbon-200"
-                style={{ gridTemplateColumns: "1fr 0.7fr 1fr 0.9fr 1fr 1fr 0.5fr 0.4fr" }}>
+                style={{ gridTemplateColumns: "1.2fr 0.7fr 1fr 0.9fr 1.1fr 1.1fr 0.5fr 0.4fr" }}>
                 {["Name", "Country", "Programme", "Budget", "📧 Email", "💬 WhatsApp", "Tier", "Score"].map((h, i) => (
                   <div key={i} className="px-3 py-3">{h}</div>
                 ))}
               </div>
-
-              {/* Rows */}
               {LEADS.map((lead, i) => (
                 <div key={i}
                   className="grid border-b border-carbon-100 last:border-0 text-sm hover:bg-carbon-50 transition-colors"
-                  style={{ gridTemplateColumns: "1fr 0.7fr 1fr 0.9fr 1fr 1fr 0.5fr 0.4fr" }}>
+                  style={{ gridTemplateColumns: "1.2fr 0.7fr 1fr 0.9fr 1.1fr 1.1fr 0.5fr 0.4fr" }}>
                   <div className="px-3 py-3 font-semibold text-carbon-900">{lead.name}</div>
                   <div className="px-3 py-3 text-carbon-600">{lead.country}</div>
-                  <div className="px-3 py-3 text-carbon-600">{lead.program}</div>
-                  <div className="px-3 py-3 text-carbon-600">{lead.budget}</div>
+                  <div className="px-3 py-3 text-carbon-600 text-xs">{lead.program}</div>
+                  <div className="px-3 py-3 text-carbon-600 text-xs">{lead.budget}</div>
                   <div className="px-3 py-3 text-carbon-400 text-xs" style={{ filter: "blur(4px)", userSelect: "none" }}>{lead.email}</div>
                   <div className="px-3 py-3 text-carbon-400 text-xs" style={{ filter: "blur(4px)", userSelect: "none" }}>+{i % 3 === 0 ? "44" : i % 3 === 1 ? "1" : "91"} ●●● ●●●●●</div>
                   <div className="px-3 py-3">
-                    <span className={`inline-block px-2 py-0.5 rounded text-xs font-bold ${lead.tier === "HOT" ? "bg-red-50 text-red-600 border border-red-200" : lead.tier === "WARM" ? "bg-orange-50 text-orange-500 border border-orange-200" : "bg-carbon-100 text-carbon-500"}`}>
-                      {lead.tier}
-                    </span>
+                    <span className={`inline-block px-2 py-0.5 rounded text-xs font-bold ${lead.tier === "HOT" ? "bg-red-50 text-red-600 border border-red-200" : lead.tier === "WARM" ? "bg-orange-50 text-orange-500 border border-orange-200" : "bg-carbon-100 text-carbon-500"}`}>{lead.tier}</span>
                   </div>
                   <div className="px-3 py-3 font-black text-carbon-900">{lead.score}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* Mobile cards */}
+            <div className="md:hidden space-y-3 mb-6">
+              {LEADS.map((lead, i) => (
+                <div key={i} className="rounded-xl border border-carbon-200 bg-white p-4">
+                  <div className="flex items-start justify-between mb-3">
+                    <div>
+                      <p className="font-black text-carbon-900 text-sm">{lead.name}</p>
+                      <p className="text-xs text-carbon-500">{lead.country} · {lead.program}</p>
+                    </div>
+                    <div className="flex items-center gap-2 flex-shrink-0">
+                      <span className={`px-2 py-0.5 rounded text-xs font-bold ${lead.tier === "HOT" ? "bg-red-50 text-red-600 border border-red-200" : lead.tier === "WARM" ? "bg-orange-50 text-orange-500 border border-orange-200" : "bg-carbon-100 text-carbon-500"}`}>{lead.tier}</span>
+                      <span className="font-black text-carbon-900 text-sm">{lead.score}</span>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 text-xs">
+                    <div className="bg-carbon-50 rounded-lg px-3 py-2">
+                      <p className="text-carbon-400 mb-0.5">Budget</p>
+                      <p className="font-bold text-carbon-800">{lead.budget}</p>
+                    </div>
+                    <div className="bg-carbon-50 rounded-lg px-3 py-2">
+                      <p className="text-carbon-400 mb-0.5">📧 Email</p>
+                      <p className="font-mono text-carbon-300" style={{ filter: "blur(4px)", userSelect: "none" }}>{lead.email}</p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>

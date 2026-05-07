@@ -85,53 +85,43 @@ export default function AboutSlide() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
               {[
                 {
-                  logo: "https://residencymalta.gov.mt/wp-content/uploads/2021/01/Residency-Malta-Agency-Logo.png",
+                  abbr: "RMA", color: "#c41e3a", textColor: "#fff",
                   label: "Residency Malta Agency",
                   sub: "Official Government Partner",
                   url: "https://residencymalta.gov.mt",
-                  fallback: "🏛️"
+                  icon: "🏛️"
                 },
                 {
-                  logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Malta_Enterprise_logo.svg/320px-Malta_Enterprise_logo.svg.png",
+                  abbr: "ME", color: "#003399", textColor: "#fff",
                   label: "Malta Enterprise",
                   sub: "Inbound Investment Body",
                   url: "https://maltaenterprise.com",
-                  fallback: "🏢"
+                  icon: "🏢"
                 },
                 {
-                  logo: "https://financemalta.org/wp-content/uploads/2023/01/FM-Logo-Horizontal-Color.png",
+                  abbr: "FM", color: "#0066cc", textColor: "#fff",
                   label: "Finance Malta",
                   sub: "Capital Markets Authority",
                   url: "https://financemalta.org",
-                  fallback: "💰"
+                  icon: "💼"
                 },
                 {
-                  logo: "https://mvc.com.mt/wp-content/uploads/2022/10/MVC-Logo.png",
+                  abbr: "MVC", color: "#1a1a2e", textColor: "#fff",
                   label: "Malta Venture Capital",
                   sub: "Startup Ecosystem Fund",
                   url: "https://mvc.com.mt",
-                  fallback: "🚀"
+                  icon: "🚀"
                 },
               ].map((p, i) => (
                 <a key={i} href={p.url} target="_blank" rel="noopener noreferrer"
-                  className="group flex flex-col items-center text-center py-5 px-4 rounded-xl border border-blue-100 bg-white hover:border-blue-300 hover:shadow-md transition-all duration-200">
-                  <div className="h-12 flex items-center justify-center mb-3">
-                    <img
-                      src={p.logo}
-                      alt={p.label}
-                      className="max-h-12 max-w-[120px] object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = "none";
-                        const fallback = target.nextElementSibling as HTMLElement;
-                        if (fallback) fallback.style.display = "block";
-                      }}
-                    />
-                    <span className="text-3xl hidden">{p.fallback}</span>
+                  className="group flex flex-col items-center text-center py-5 px-4 rounded-xl border border-blue-100 bg-white hover:border-blue-300 hover:shadow-md transition-all duration-200 cursor-pointer">
+                  <div className="w-16 h-16 rounded-2xl flex items-center justify-center mb-3 font-black text-sm tracking-tight"
+                    style={{ background: p.color, color: p.textColor }}>
+                    {p.abbr}
                   </div>
-                  <p className="text-sm font-bold text-carbon-800 mb-1 group-hover:text-blue-700 transition-colors">{p.label}</p>
-                  <p className="text-xs text-carbon-400">{p.sub}</p>
-                  <span className="mt-2 text-xs text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity">↗ Visit site</span>
+                  <p className="text-sm font-bold text-carbon-800 mb-1 group-hover:text-blue-700 transition-colors leading-tight">{p.label}</p>
+                  <p className="text-xs text-carbon-400 mb-2">{p.sub}</p>
+                  <span className="text-xs text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity">↗ Visit site</span>
                 </a>
               ))}
             </div>
