@@ -147,7 +147,7 @@ export default function PartnersAndAgenda() {
               <div>
                 <div className="flex items-center gap-2 mb-4">
                   <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">🏢 COMMERCIAL</span>
-                  <h3 className="font-black text-carbon-900 text-lg">Day 2: Incorporation &amp; Tax Optimization</h3>
+                  <h3 className="font-black text-carbon-900 text-lg">Day 2: Residency, Incorporation &amp; Tax Optimization</h3>
                 </div>
                 <div className="space-y-3">
                   {DAY2.map((s, i) => (
