@@ -122,7 +122,7 @@ export default function PartnersAndAgenda() {
             <div className="grid md:grid-cols-2 gap-6">
               {/* Day 1 */}
               <div>
-                <div className="flex items-center gap-2 mb-4">
+                <div className="flex items-start gap-2 mb-4">
                   <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-red-50 text-red-700 border border-red-200">🏛 GOV</span>
                   <h3 className="font-black text-carbon-900 text-lg">Day 1: Malta as a Strategic Solution</h3>
                 </div>
@@ -145,8 +145,8 @@ export default function PartnersAndAgenda() {
 
               {/* Day 2 */}
               <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">🏢 COMMERCIAL</span>
+                <div className="flex items-start gap-2 mb-4">
+                  <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">🏢 ASP</span>
                   <h3 className="font-black text-carbon-900 text-lg">Day 2: Residency, Incorporation &amp; Tax Optimization</h3>
                 </div>
                 <div className="space-y-3">
