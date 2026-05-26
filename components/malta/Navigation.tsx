@@ -13,7 +13,6 @@ const SLIDES = [
   { id: "funnel", label: "Funnel" },
   { id: "flow", label: "Flow" },
   { id: "partners-prev", label: "Partners" },
-  { id: "pricing-brand", label: "Pricing" },
   { id: "contact", label: "Contact" },
 ];
 
@@ -58,7 +57,6 @@ export default function Navigation() {
               { id: "about", label: "About" },
               { id: "audience", label: "Audience" },
               { id: "agenda", label: "Agenda" },
-              { id: "pricing-brand", label: "Pricing" },
             ].map(l => (
               <button key={l.id} onClick={() => go(l.id)}
                 className={`text-sm font-medium transition-colors ${active === l.id ? "text-blue-600" : "text-carbon-500 hover:text-carbon-800"}`}>

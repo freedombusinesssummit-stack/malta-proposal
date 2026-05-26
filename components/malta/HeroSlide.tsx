@@ -105,10 +105,7 @@ export default function HeroSlide() {
           <ShimmerButton href="mailto:denis@fsummit.net" background="#e11d48" shimmerColor="rgba(255,255,255,0.4)" shimmerDuration="1.8s" className="text-sm font-bold px-5 py-2.5">
             Partner With Us →
           </ShimmerButton>
-          <button onClick={() => document.getElementById("pricing-brand")?.scrollIntoView({ behavior: "smooth" })}
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-semibold text-carbon-700 border border-carbon-200 hover:border-blue-200 hover:text-carbon-900 transition-all bg-white">
-            View Packages
-          </button>
+
         </div>
 
         {/* Avatars */}
