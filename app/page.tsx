@@ -7,7 +7,7 @@ import AudienceWho from "@/components/malta/AudienceWho";
 import IntelSlides from "@/components/malta/IntelSlides";
 import SpeakerVideos from "@/components/malta/SpeakerVideos";
 import PartnersAndAgenda from "@/components/malta/PartnersAndAgenda";
-import PackagesSlides from "@/components/malta/PackagesSlides";
+// import PackagesSlides from "@/components/malta/PackagesSlides";
 import ContactSlide from "@/components/malta/ContactSlide";
 
 export default function Home() {
@@ -21,7 +21,7 @@ export default function Home() {
       <IntelSlides />
       <SpeakerVideos />
       <PartnersAndAgenda />
-      <PackagesSlides />
+      {/* <PackagesSlides /> */}
       <ContactSlide />
     </main>
   );
