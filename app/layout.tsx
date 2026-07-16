@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Freedom Business Summit — Malta Edition 2026",
-  description: "The Premier Summit for EU Investment, Residency & Corporate Structuring. 23–24 June 2026 · Virtual Event · In official partnership with Residency Malta Agency.",
+  title: "Freedom Business Summit — Malta Edition 2026 | 2–3 September",
+  description: "The Premier Summit for EU Investment, Residency & Corporate Structuring. 2–3 September 2026 · Virtual Event · In official partnership with Residency Malta Agency.",
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
