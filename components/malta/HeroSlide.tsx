@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
 
 function Countdown() {
-  const target = new Date("2026-06-23T09:00:00+02:00").getTime();
+  const target = new Date("2026-09-02T09:00:00+02:00").getTime();
   const [t, setT] = useState({ d: 0, h: 0, m: 0, s: 0 });
   useEffect(() => {
     const tick = () => {
@@ -48,7 +48,7 @@ export default function HeroSlide() {
 
         {/* Pills */}
         <div className="flex flex-wrap gap-2 mb-6" style={fade(0)}>
-          {["23–24 June 2026", "Virtual Event", "Worldwide Online 🌐"].map((t, i) => (
+          {["2–3 September 2026", "Virtual Event", "Worldwide Online 🌐"].map((t, i) => (
             <span key={i} className="pill">{t}</span>
           ))}
         </div>

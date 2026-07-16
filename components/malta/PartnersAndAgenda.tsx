@@ -109,7 +109,7 @@ export default function PartnersAndAgenda() {
         <div className="wrap">
           <AnimatedSection>
             <Badge variant="success" className="mb-3">Summit Agenda</Badge>
-            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 mb-2">23–24 June 2026</h2>
+            <h2 className="text-3xl md:text-4xl font-black text-carbon-900 mb-2">2–3 September 2026</h2>
             <p className="text-carbon-500 mb-2">Virtual Summit · Government Entities on Day 1 · Commercial Agents on Day 2</p>
             <div className="flex flex-wrap gap-3 mb-8">
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-carbon-100 text-carbon-700">🕐 11:00 AM – 3:00 PM EST</span>
