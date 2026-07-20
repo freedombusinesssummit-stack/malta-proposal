@@ -42,10 +42,11 @@ const DAY1 = [
 ];
 
 const DAY2 = [
-  { num: 5, time: "11:00 AM EST", org: "Residency & Citizenship Advisory", title: "Pathways to EU Residency & Citizenship via Malta", desc: "Practical guide for HNWIs — residency by investment, MPRP thresholds, timelines, and long-term EU access", type: "COMMERCIAL" },
-  { num: 6, time: "11:45 AM EST", org: "Corporate Structuring", title: "Structuring Your Corporate Presence & EU Market Access", desc: "How to incorporate in Malta, structure holding companies, and access the EU single market", type: "COMMERCIAL" },
-  { num: 7, time: "12:30 PM EST", org: "Tax & Legal", title: "Tax Optimization & Legal Frameworks for International Founders", desc: "Malta's 6/7ths refund system, participation exemption, double tax treaties, and practical structuring", type: "COMMERCIAL" },
-  { num: 8, time: "1:15 PM EST", org: "iGaming & Compliance", title: "iGaming: Licensing, Payments & Compliance in Practice", desc: "MGA licensing, payment processing, AML/KYC — what it takes to run a regulated gaming business", type: "COMMERCIAL" },
+  { num: 1, time: "11:00 AM EST", org: "Residency & Global Mobility", title: "Malta Residency Solutions for International Families", desc: "MPRP eligibility, investment requirements, family inclusion, due diligence, timelines, and Schengen mobility", type: "ASP" },
+  { num: 2, time: "11:45 AM EST", org: "Corporate, Tax & Legal", title: "Structuring Your Business Presence in Malta", desc: "Company formation, holding structures, corporate taxation, shareholder refunds, participation exemption, substance, and cross-border planning", type: "ASP" },
+  { num: 3, time: "12:30 PM EST", org: "Startups & Entrepreneurship", title: "Launching and Scaling a Startup from Malta", desc: "Business setup, funding opportunities, incentives, talent, intellectual property, innovation support, and European expansion", type: "ASP" },
+  { num: 4, time: "1:15 PM EST", org: "Real Estate Investment", title: "Investing in Malta's Property Market", desc: "Residential, commercial, and luxury property — ownership structures, rental potential, due diligence, costs, and exit strategies", type: "ASP" },
+  { num: 5, time: "2:00 PM EST", org: "iGaming & Compliance", title: "Launching and Operating a Malta-Regulated Gaming Business", desc: "MGA licensing, B2B and B2C models, payments, operational substance, AML/KYC, and ongoing regulatory compliance", type: "ASP" },
 ];
 
 export default function PartnersAndAgenda() {
@@ -147,7 +148,7 @@ export default function PartnersAndAgenda() {
               <div>
                 <div className="flex items-center gap-2 mb-4">
                   <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200 whitespace-nowrap">🏢 ASP</span>
-                  <h3 className="font-black text-carbon-900 text-lg leading-tight">Day 2: Residency, Incorporation &amp; Tax Optimization</h3>
+                  <h3 className="font-black text-carbon-900 text-lg leading-tight">Day 2: Residency, Incorporation, Tax &amp; Investment Opportunities</h3>
                 </div>
                 <div className="space-y-3">
                   {DAY2.map((s, i) => (
