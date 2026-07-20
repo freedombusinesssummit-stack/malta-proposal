@@ -130,12 +130,12 @@ export default function PartnersAndAgenda() {
                 </div>
                 <div className="space-y-3">
                   {DAY1.map((s, i) => (
-                    <div key={i} className={`flex items-start gap-3 rounded-xl border p-4 transition-all ${s.type === "PANEL" ? "border-blue-300 bg-blue-50 hover:bg-blue-100" : "border-carbon-200 bg-white hover:border-blue-200 hover:bg-blue-50"}`}>
+                    <div key={i} className={`flex items-start gap-3 rounded-xl border p-4 transition-all ${s.type === "PANEL" ? "border-red-200 bg-red-50 hover:bg-red-100" : "border-carbon-200 bg-white hover:border-blue-200 hover:bg-blue-50"}`}>
                       <span className="font-black text-2xl text-carbon-100 flex-shrink-0 leading-none w-8">{s.num}</span>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1 flex-wrap">
                           <p className={`text-xs font-bold uppercase tracking-widest ${s.type === "PANEL" ? "text-red-600" : "text-red-600"}`}>{s.org}</p>
-                          {s.type === "PANEL" && <span className="text-xs font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-700 border border-blue-200">🎙 PANEL</span>}
+                          {s.type === "PANEL" && <span className="text-xs font-bold px-2 py-0.5 rounded bg-red-100 text-red-700 border border-red-200">🎙 PANEL</span>}
                           <span className="text-xs font-semibold text-carbon-400 bg-carbon-50 px-2 py-0.5 rounded">{s.time}</span>
                         </div>
                         <p className="font-black text-carbon-900 text-sm leading-snug">{s.title}</p>
