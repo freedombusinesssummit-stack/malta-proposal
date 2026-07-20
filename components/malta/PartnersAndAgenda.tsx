@@ -39,6 +39,7 @@ const DAY1 = [
   { num: 2, time: "11:45 AM EST", org: "Finance Malta", title: "Financial Infrastructure & EU Market Access", desc: "Malta's capital markets ecosystem, banking access, and EU financial gateway", type: "GOV" },
   { num: 3, time: "12:30 PM EST", org: "Malta Venture Capital (MVC)", title: "Startup Ecosystem in Malta", desc: "MVC invests in high-potential startups driving economic diversification and social impact", type: "GOV" },
   { num: 4, time: "1:15 PM EST", org: "Residency Malta Agency", title: "Malta Residency Programmes: MPRP, Nomad & Family Office", desc: "Full overview of Malta's residency pathways — MPRP · Nomad Permit · Startup Permit · Family Office Residency", type: "GOV" },
+  { num: 5, time: "2:00 PM EST", org: "Panel Discussion", title: "Malta as a Gateway: Government Perspective", desc: "All four government agencies — Malta Enterprise, Finance Malta, MVC, and Residency Malta Agency — in a live panel Q&A with the audience", type: "PANEL" },
 ];
 
 const DAY2 = [
@@ -129,11 +130,12 @@ export default function PartnersAndAgenda() {
                 </div>
                 <div className="space-y-3">
                   {DAY1.map((s, i) => (
-                    <div key={i} className="flex items-start gap-3 rounded-xl border border-carbon-200 bg-white p-4 hover:border-blue-200 hover:bg-blue-50 transition-all">
+                    <div key={i} className={`flex items-start gap-3 rounded-xl border p-4 transition-all ${s.type === "PANEL" ? "border-blue-300 bg-blue-50 hover:bg-blue-100" : "border-carbon-200 bg-white hover:border-blue-200 hover:bg-blue-50"}`}>
                       <span className="font-black text-2xl text-carbon-100 flex-shrink-0 leading-none w-8">{s.num}</span>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1 flex-wrap">
-                          <p className="text-xs font-bold uppercase tracking-widest text-red-600">{s.org}</p>
+                          <p className={`text-xs font-bold uppercase tracking-widest ${s.type === "PANEL" ? "text-blue-600" : "text-red-600"}`}>{s.org}</p>
+                          {s.type === "PANEL" && <span className="text-xs font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-700 border border-blue-200">🎙 PANEL</span>}
                           <span className="text-xs font-semibold text-carbon-400 bg-carbon-50 px-2 py-0.5 rounded">{s.time}</span>
                         </div>
                         <p className="font-black text-carbon-900 text-sm leading-snug">{s.title}</p>
