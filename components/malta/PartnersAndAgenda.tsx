@@ -134,7 +134,7 @@ export default function PartnersAndAgenda() {
                       <span className="font-black text-2xl text-carbon-100 flex-shrink-0 leading-none w-8">{s.num}</span>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1 flex-wrap">
-                          <p className={`text-xs font-bold uppercase tracking-widest ${s.type === "PANEL" ? "text-blue-600" : "text-red-600"}`}>{s.org}</p>
+                          <p className={`text-xs font-bold uppercase tracking-widest ${s.type === "PANEL" ? "text-red-600" : "text-red-600"}`}>{s.org}</p>
                           {s.type === "PANEL" && <span className="text-xs font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-700 border border-blue-200">🎙 PANEL</span>}
                           <span className="text-xs font-semibold text-carbon-400 bg-carbon-50 px-2 py-0.5 rounded">{s.time}</span>
                         </div>
