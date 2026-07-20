@@ -125,7 +125,7 @@ export default function PartnersAndAgenda() {
               {/* Day 1 */}
               <div>
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-red-50 text-red-700 border border-red-200 whitespace-nowrap">🏛 GOV</span>
+                  <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200 whitespace-nowrap">GOV</span>
                   <h3 className="font-black text-carbon-900 text-lg leading-tight">Day 1: Malta as a Strategic Solution</h3>
                 </div>
                 <div className="space-y-3">
@@ -134,7 +134,7 @@ export default function PartnersAndAgenda() {
                       <span className="font-black text-2xl text-carbon-100 flex-shrink-0 leading-none w-8">{s.num}</span>
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-1 flex-wrap">
-                          <p className={`text-xs font-bold uppercase tracking-widest ${s.type === "PANEL" ? "text-blue-600" : "text-red-600"}`}>{s.org}</p>
+                          <p className={`text-xs font-bold uppercase tracking-widest ${s.type === "PANEL" ? "text-blue-600" : "text-blue-600"}`}>{s.org}</p>
                           {s.type === "PANEL" && <span className="text-xs font-bold px-2 py-0.5 rounded bg-blue-100 text-blue-700 border border-blue-200">🎙 PANEL</span>}
                           <span className="text-xs font-semibold text-carbon-400 bg-carbon-50 px-2 py-0.5 rounded">{s.time}</span>
                         </div>
@@ -149,7 +149,7 @@ export default function PartnersAndAgenda() {
               {/* Day 2 */}
               <div>
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200 whitespace-nowrap">🏢 ASP</span>
+                  <span className="inline-flex items-center px-3 py-1.5 rounded-lg text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200 whitespace-nowrap">ASP</span>
                   <h3 className="font-black text-carbon-900 text-lg leading-tight">Day 2: Residency, Incorporation, Tax &amp; Investment Opportunities</h3>
                 </div>
                 <div className="space-y-3">
