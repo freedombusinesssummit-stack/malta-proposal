@@ -63,6 +63,10 @@ export default function Navigation() {
                 {l.label}
               </button>
             ))}
+            <a href="/pricing"
+              className="text-sm font-medium transition-colors text-carbon-500 hover:text-carbon-800">
+              Pricing
+            </a>
           </div>
 
           {/* Right side */}
