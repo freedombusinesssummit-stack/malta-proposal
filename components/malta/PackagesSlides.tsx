@@ -202,7 +202,7 @@ export default function PackagesSlides() {
               <div className="mb-5">
                 <p className="text-xs font-bold uppercase tracking-widest mb-1.5" style={{ color: "#9ef01a" }}>Contact</p>
                 <h3 className="text-2xl font-black text-carbon-900 mb-2" >Ready to Partner?</h3>
-                <p className="text-sm text-carbon-500 mb-5">We only work with <strong className="text-carbon-900">8–10 selected partners per event.</strong> Reach out now to secure your slot before the Early Bird deadline on May 31st.</p>
+                <p className="text-sm text-carbon-500 mb-5">We only work with <strong className="text-carbon-900">8–10 selected partners per event.</strong> Reach out now to secure your slot before the Early Bird deadline on August 15th.</p>
                 <ShimmerButton href="mailto:denis@fsummit.net" background="#9ef01a" shimmerColor="rgba(255,255,255,0.4)" shimmerDuration="1.8s" className="text-sm font-bold px-6 py-3">
                   Become a Partner →
                 </ShimmerButton>
@@ -271,14 +271,14 @@ export default function PackagesSlides() {
               <div className="relative rounded-xl p-6 overflow-hidden" style={{ background: "#eff6ff", border: "1px solid #bfdbfe" }}>
                 <p className="text-xs font-bold text-carbon-400 uppercase tracking-widest mb-2">GROWTH · Early Bird</p>
                 <AnimatedGradientText className="text-4xl font-black tracking-tight">€3,750</AnimatedGradientText>
-                <p className="text-xs text-carbon-400 mt-1 mb-4">Standard (May 31st): <span className="line-through">€4,450</span></p>
+                <p className="text-xs text-carbon-400 mt-1 mb-4">Standard (August 15th): <span className="line-through">€4,450</span></p>
                 <ShimmerButton href="mailto:denis@fsummit.net" background="#9ef01a" shimmerDuration="1.6s">Claim Growth Slot →</ShimmerButton>
               </div>
               <div className="relative bento-card p-6 overflow-hidden">
                 <BorderBeam size={150} duration={12} colorFrom="#9ef01a" colorTo="#4ade80" borderWidth={1.5} />
                 <p className="text-xs font-bold text-carbon-400 uppercase tracking-widest mb-2">STRATEGIC · Early Bird</p>
                 <span className="text-4xl font-black text-carbon-900 tracking-tight">€4,950</span>
-                <p className="text-xs text-carbon-400 mt-1 mb-4">Standard (May 31st): <span className="line-through">€5,950</span></p>
+                <p className="text-xs text-carbon-400 mt-1 mb-4">Standard (August 15th): <span className="line-through">€5,950</span></p>
                 <a href="mailto:denis@fsummit.net" className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-bold border border-carbon-200 text-carbon-700 hover:border-blue-200 hover:text-carbon-900 transition-all">Claim Strategic Slot →</a>
               </div>
             </div>
@@ -336,13 +336,13 @@ export default function PackagesSlides() {
                   <Badge variant="lime" className="text-xs">✦ Best Choice</Badge>
                 </div>
 <AnimatedGradientText className="text-4xl font-black tracking-tight">€1,950</AnimatedGradientText>
-                <p className="text-xs text-carbon-400 mt-1 mb-4">Standard (May 31st): <span className="line-through">€2,450</span></p>
+                <p className="text-xs text-carbon-400 mt-1 mb-4">Standard (August 15th): <span className="line-through">€2,450</span></p>
                 <ShimmerButton href="mailto:denis@fsummit.net" background="#9ef01a" shimmerDuration="1.6s">Claim Premium Slot →</ShimmerButton>
               </div>
               <div className="bento-card p-6">
                 <p className="text-xs font-bold text-carbon-400 uppercase tracking-widest mb-2">BUSINESS · Early Bird</p>
                 <span className="text-4xl font-black text-carbon-900 tracking-tight">€1,550</span>
-                <p className="text-xs text-carbon-400 mt-1 mb-4">Standard (May 31st): <span className="line-through">€1,950</span></p>
+                <p className="text-xs text-carbon-400 mt-1 mb-4">Standard (August 15th): <span className="line-through">€1,950</span></p>
                 <a href="mailto:denis@fsummit.net" className="inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-bold border border-carbon-200 text-carbon-700 hover:border-blue-200 hover:text-carbon-900 transition-all">Claim Business Slot →</a>
               </div>
             </div>
