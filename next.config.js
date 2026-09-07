@@ -1,17 +1,16 @@
 /** @type {import('next').NextConfig} */
 
 // The Malta Event Edition audience & demand report lives in its own repo and
-// Vercel project (freedombusinesssummit-stack/maltareport). Old links to /report
-// on this site keep working via the redirect below.
+// Vercel project (freedombusinesssummit-stack/maltareport), served at
+// maltareport.fsummit.net. Old links to /report on this site keep working via
+// the redirect below.
 //
-// Target: the report's own production URL. Once malta.report.fsummit.net is
-// attached to the maltareport project, switch by setting the REPORT_URL
-// environment variable in Vercel — no code change or redeploy of this repo's
-// source needed.
+// To move the report to a different URL later, set the REPORT_URL environment
+// variable in Vercel — no code change needed.
 //
 // The redirect is temporary (307) on purpose: browsers cache permanent (308)
-// redirects aggressively, so keep it temporary until the final domain is stable.
-const REPORT_URL = process.env.REPORT_URL || 'https://maltareport.vercel.app'
+// redirects aggressively, so keep it temporary until the domain is settled.
+const REPORT_URL = process.env.REPORT_URL || 'https://maltareport.fsummit.net'
 
 const nextConfig = {
   images: { unoptimized: true },
