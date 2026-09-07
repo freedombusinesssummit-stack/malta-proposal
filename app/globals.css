@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -398,4 +399,120 @@
     padding-bottom: 60px;
   }
   .slide-number { display: none; }
+}
+
+/* ===================== MALTA EVENT REPORT (/report) ===================== */
+/* Scoped to .rpt — an editorial, consulting-report visual system that does
+   not touch the proposal site's styling above. */
+
+.rpt {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #051c2c;
+  font-feature-settings: "tnum" 0;
+}
+
+.rpt-wrap {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 768px) {
+  .rpt-wrap { padding-left: 40px; padding-right: 40px; }
+}
+
+.rpt-h1 {
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: clamp(38px, 6vw, 68px);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+}
+
+.rpt-h2 {
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: clamp(26px, 3.4vw, 40px);
+  line-height: 1.14;
+  letter-spacing: -0.015em;
+  color: #051c2c;
+}
+
+.rpt-lead {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #4a5560;
+}
+
+.rpt-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6b7681;
+}
+
+.rpt-kpi {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: clamp(34px, 4vw, 46px);
+  line-height: 1;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.rpt-kpi-unit {
+  font-size: 20px;
+  font-weight: 600;
+  color: #6b7681;
+}
+
+/* Exhibits */
+.rpt-exhibit {
+  background: #ffffff;
+  min-width: 0;
+  border: 1px solid #e3e6ea;
+  padding: 28px 24px 22px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .rpt-exhibit { padding: 32px 32px 24px; }
+}
+.rpt-exhibit > div:nth-child(2) { margin-bottom: 22px; }
+
+.rpt-exhibit-no {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #2251ff;
+}
+.rpt-exhibit-title {
+  margin-top: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #051c2c;
+}
+.rpt-exhibit-sub {
+  margin-top: 6px;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #6b7681;
+}
+.rpt-source {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid #eef0f2;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #8a939c;
+}
+
+.rpt table { font-variant-numeric: tabular-nums; }
+
+@media print {
+  .rpt nav { display: none; }
+  .rpt-exhibit { break-inside: avoid; }
 }
